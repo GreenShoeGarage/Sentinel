@@ -1,0 +1,223 @@
+{
+  "suite": "Report governance semantic source checks",
+  "timestamp": "2026-08-24T20:03:56.134351+00:00",
+  "passed": false,
+  "assertions": [
+    {
+      "name": "Schema 14 migration is represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Report artifact is stored in project model",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Report normalization preserves custom sections",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Final issue records accountable attribution",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Final issue records timestamp",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Final issue calculates SHA-256 or fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Final issue sets an immutable or locked state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Review state exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Approval state exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Return-to-draft rationale is represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "New revision retains prior issue history or source reference",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "New revision returns to editable draft",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Material project fingerprint/staleness comparison exists",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Issued report divergence does not overwrite issue",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Executive Summary has persistent field",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Methodology has persistent field",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Assessment Limitations has persistent field",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Conclusion has persistent field",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Section order is persisted",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Section inclusion is persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Custom sections are editable and orderable",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Report package export implementation exists",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Report package uses explicit selected evidence",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Report package writes manifest",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Report package includes report output",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Report package does not describe itself as full project backup",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Test Log appendix available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Observation Register appendix available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence Index appendix available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo Log appendix available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Coverage Matrix appendix available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Rules of Engagement appendix available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Formal Retests appendix available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Baseline Comparisons appendix available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Standalone HTML output exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Markdown output exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Structured JSON output exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Print/PDF stylesheet exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Draft watermark is represented",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Sensitivity marking appears in report rendering",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Report readiness gate is implemented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Approval identity and rationale are represented",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Issued report is not normally editable",
+      "passed": false,
+      "detail": ""
+    }
+  ],
+  "source_sha256": "5be74eaedc1a9e238632a0be1757af047ef6020a0f7550487d8a7d16a6b0338b"
+}

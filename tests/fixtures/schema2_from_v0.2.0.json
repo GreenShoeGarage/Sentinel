@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "appVersion": "0.2.0",
+  "id": "id-1787529691327-7avz14anw0a",
+  "createdAt": "2026-08-24T00:01:31.327Z",
+  "updatedAt": "2026-08-24T00:01:31.327Z",
+  "mode": "easy",
+  "project": {
+    "name": "Untitled Assessment",
+    "client": "",
+    "site": "",
+    "lead": "",
+    "startDate": "",
+    "endDate": "",
+    "classification": "",
+    "purpose": "",
+    "scope": ""
+  },
+  "authorization": {
+    "status": "PLANNING",
+    "sponsor": "",
+    "authority": "",
+    "team": "",
+    "emergencyContacts": "",
+    "authorizedFacilities": "",
+    "authorizedAreas": "",
+    "excludedAreas": "",
+    "authorizedTechniques": "",
+    "prohibitedTechniques": "",
+    "allowedHours": "",
+    "restrictedHours": "",
+    "interactionRules": "",
+    "photoRestrictions": "",
+    "recordingRestrictions": "",
+    "socialEngineering": false,
+    "tailgating": false,
+    "lockTesting": false,
+    "vehicleTesting": false,
+    "alarmTesting": false,
+    "rfTesting": false,
+    "safetyRestrictions": "",
+    "stopConditions": "",
+    "escalation": "",
+    "lawEnforcement": "",
+    "evidenceHandling": ""
+  },
+  "sites": [
+    {
+      "id": "id-1787529691327-s9kcsw96lt",
+      "code": "SITE-01",
+      "name": "Primary Site",
+      "type": "SITE",
+      "parentId": null
+    }
+  ],
+  "controls": [],
+  "tests": [],
+  "events": [],
+  "observations": [],
+  "evidence": [],
+  "findings": [],
+  "interactions": [],
+  "assumptions": [],
+  "issues": [],
+  "baselines": [],
+  "retests": [],
+  "notes": [],
+  "map": {
+    "imageData": null,
+    "imageName": "",
+    "markers": []
+  },
+  "_fixtureSource": {
+    "release": "v0.2.0",
+    "schema": 2,
+    "generatedFromPublishedBlankProject": true
+  }
+}

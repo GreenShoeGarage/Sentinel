@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "appVersion": "0.3.0",
+  "id": "id-1787529691438-eepu0q7pa6h",
+  "createdAt": "2026-08-24T00:01:31.438Z",
+  "updatedAt": "2026-08-24T00:01:31.438Z",
+  "mode": "easy",
+  "project": {
+    "name": "Untitled Assessment",
+    "client": "",
+    "site": "",
+    "lead": "",
+    "startDate": "",
+    "endDate": "",
+    "classification": "",
+    "purpose": "",
+    "scope": ""
+  },
+  "authorization": {
+    "status": "PLANNING",
+    "sponsor": "",
+    "authority": "",
+    "team": "",
+    "emergencyContacts": "",
+    "authorizedFacilities": "",
+    "authorizedAreas": "",
+    "excludedAreas": "",
+    "authorizedTechniques": "",
+    "prohibitedTechniques": "",
+    "allowedHours": "",
+    "restrictedHours": "",
+    "interactionRules": "",
+    "photoRestrictions": "",
+    "recordingRestrictions": "",
+    "socialEngineering": false,
+    "tailgating": false,
+    "lockTesting": false,
+    "vehicleTesting": false,
+    "alarmTesting": false,
+    "rfTesting": false,
+    "safetyRestrictions": "",
+    "stopConditions": "",
+    "escalation": "",
+    "lawEnforcement": "",
+    "evidenceHandling": ""
+  },
+  "sites": [
+    {
+      "id": "id-1787529691438-8p0giwycj3b",
+      "code": "ORG-01",
+      "name": "Organization",
+      "type": "ORGANIZATION",
+      "parentId": null,
+      "description": ""
+    }
+  ],
+  "controls": [],
+  "tests": [],
+  "events": [],
+  "observations": [],
+  "evidence": [],
+  "findings": [],
+  "interactions": [],
+  "assumptions": [],
+  "issues": [],
+  "baselines": [],
+  "retests": [],
+  "notes": [],
+  "map": {
+    "imageData": null,
+    "imageName": "",
+    "markers": []
+  },
+  "_fixtureSource": {
+    "release": "v0.3.0",
+    "schema": 3,
+    "generatedFromPublishedBlankProject": true
+  }
+}

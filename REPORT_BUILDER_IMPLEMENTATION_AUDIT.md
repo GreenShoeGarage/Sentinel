@@ -1,0 +1,65 @@
+# Professional Report Builder 2.0 Static Implementation Audit
+
+- Source: `index.html`
+- SHA-256: `5be74eaedc1a9e238632a0be1757af047ef6020a0f7550487d8a7d16a6b0338b`
+- Checks satisfied: **28 / 44**
+- Critical static gate: **REVIEW REQUIRED**
+
+- [ ] Application version 0.14.0
+- [ ] Project Schema 14
+- [ ] Persistent report artifact
+- [x] Ordered report sections
+- [ ] Custom sections
+- [ ] Executive summary record
+- [ ] Methodology record
+- [x] Limitations record
+- [x] Conclusion record
+- [ ] Branding support
+- [x] Sensitivity markings
+- [x] Evidence selection
+- [ ] Evidence captions
+- [x] Appendix selection
+- [x] Full test log appendix
+- [x] Full observation appendix
+- [x] Full evidence index
+- [x] Photo Log appendix
+- [x] Coverage appendix
+- [x] Rules of Engagement appendix
+- [x] Retest appendix
+- [ ] Prepared-by block
+- [x] Review block
+- [ ] Approval block
+- [x] Draft state
+- [x] Review state
+- [x] Approved state
+- [ ] Final issued state
+- [ ] Revision history
+- [x] Final issue lock
+- [x] Issue fingerprint/hash
+- [x] Material staleness detection
+- [ ] Create new revision
+- [x] Draft watermark
+- [ ] Page headers
+- [ ] Page footers
+- [x] HTML export
+- [x] Markdown export
+- [x] JSON export
+- [ ] Report package export
+- [x] Explicit evidence package selection
+- [x] Report readiness gate
+- [x] Report preview
+- [x] Print/PDF support
+
+## Critical items requiring review
+
+- Application version 0.14.0
+- Project Schema 14
+- Persistent report artifact
+- Custom sections
+- Executive summary record
+- Methodology record
+- Approval block
+- Final issued state
+- Revision history
+- Create new revision
+- Report package export

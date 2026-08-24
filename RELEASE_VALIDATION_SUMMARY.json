@@ -1,0 +1,37 @@
+{
+  "release_ready": false,
+  "critical_checks": {
+    "Build gate: Version 0.14.0": false,
+    "Build gate: Schema 14": false,
+    "Build gate: Report artifact": false,
+    "Build gate: Final issue governance": true,
+    "Build gate: Revision history": false,
+    "Build gate: Report package": false,
+    "Static: Application source exists": true,
+    "Static: Application identifies Version 0.14.0": false,
+    "Static: Application identifies Project Schema 14": false,
+    "Static: No duplicate static element identifiers": true,
+    "Static: No remote script or stylesheet dependencies": true,
+    "Static: All inline JavaScript passes node --check": true,
+    "Governance semantic coverage is at least 70 percent": false,
+    "Browser: Application loads": false,
+    "Browser: Report Builder workspace opens": false,
+    "Browser: Executive Summary visible": false,
+    "Browser: Methodology visible": false,
+    "Browser: Limitations visible": false,
+    "Browser: Conclusion visible": false,
+    "Browser: Report preview produces substantial content": false,
+    "Browser: Report Builder mobile layout avoids major horizontal overflow": false,
+    "Browser: No uncaught browser errors": false
+  },
+  "focused_assertions": 73,
+  "passed_assertions": 44,
+  "failed_assertions": 29,
+  "inherited": {
+    "executed": 1,
+    "passed": 0,
+    "failed": 1
+  },
+  "downloads": [],
+  "source_sha256": "5be74eaedc1a9e238632a0be1757af047ef6020a0f7550487d8a7d16a6b0338b"
+}

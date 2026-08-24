@@ -1,0 +1,153 @@
+{
+  "suite": "Static release checks",
+  "timestamp": "2026-08-24T20:00:49.882135+00:00",
+  "passed": false,
+  "assertions": [
+    {
+      "name": "Application source exists",
+      "passed": true,
+      "detail": "755037"
+    },
+    {
+      "name": "Application identifies Version 0.14.0",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Application identifies Project Schema 14",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "No duplicate static element identifiers",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "No remote script or stylesheet dependencies",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Inline JavaScript is present",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "All inline JavaScript passes node --check",
+      "passed": true,
+      "detail": "[{'script': 0, 'returncode': 0, 'stderr': ''}]"
+    },
+    {
+      "name": "Persistent report artifact",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Ordered composition",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Custom report sections",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Executive summary",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Methodology",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Limitations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Conclusion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Branding",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Selected evidence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Appendix controls",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Review lifecycle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Approval lifecycle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Final issue lifecycle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Revision history",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Issue hash",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Staleness detection",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Final issue locking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "HTML output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Markdown output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JSON output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Report package",
+      "passed": false,
+      "detail": ""
+    },
+    {
+      "name": "Print/PDF",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "source_sha256": "5be74eaedc1a9e238632a0be1757af047ef6020a0f7550487d8a7d16a6b0338b"
+}

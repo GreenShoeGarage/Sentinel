@@ -1,0 +1,5 @@
+SENTINEL 0.14.0 — Professional Report Builder 2.0
+
+Open index.html in a current browser. For the most reliable IndexedDB, encryption, media capture, and package behavior, serve this directory from localhost or a static HTTPS host rather than relying on a file:// URL.
+
+Read README.md for application guidance, REPORT_BUILDER_GUIDE.md for the governed reporting workflow, and VALIDATION.md for the release validation record.

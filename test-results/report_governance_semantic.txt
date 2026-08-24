@@ -1,0 +1,44 @@
+FAIL 26/43
+PASS Schema 14 migration is represented: 
+FAIL Report artifact is stored in project model: 
+FAIL Report normalization preserves custom sections: 
+PASS Final issue records accountable attribution: 
+PASS Final issue records timestamp: 
+PASS Final issue calculates SHA-256 or fingerprint: 
+PASS Final issue sets an immutable or locked state: 
+PASS Review state exists: 
+PASS Approval state exists: 
+PASS Return-to-draft rationale is represented: 
+FAIL New revision retains prior issue history or source reference: 
+FAIL New revision returns to editable draft: 
+FAIL Material project fingerprint/staleness comparison exists: 
+FAIL Issued report divergence does not overwrite issue: 
+FAIL Executive Summary has persistent field: 
+FAIL Methodology has persistent field: 
+PASS Assessment Limitations has persistent field: 
+PASS Conclusion has persistent field: 
+FAIL Section order is persisted: 
+PASS Section inclusion is persisted: 
+FAIL Custom sections are editable and orderable: 
+FAIL Report package export implementation exists: 
+FAIL Report package uses explicit selected evidence: 
+FAIL Report package writes manifest: 
+FAIL Report package includes report output: 
+PASS Report package does not describe itself as full project backup: 
+PASS Test Log appendix available: 
+PASS Observation Register appendix available: 
+PASS Evidence Index appendix available: 
+PASS Photo Log appendix available: 
+PASS Coverage Matrix appendix available: 
+PASS Rules of Engagement appendix available: 
+PASS Formal Retests appendix available: 
+PASS Baseline Comparisons appendix available: 
+PASS Standalone HTML output exists: 
+PASS Markdown output exists: 
+PASS Structured JSON output exists: 
+PASS Print/PDF stylesheet exists: 
+FAIL Draft watermark is represented: 
+PASS Sensitivity marking appears in report rendering: 
+PASS Report readiness gate is implemented: 
+FAIL Approval identity and rationale are represented: 
+FAIL Issued report is not normally editable: 

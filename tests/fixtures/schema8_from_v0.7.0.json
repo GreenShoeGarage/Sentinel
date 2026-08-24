@@ -1,0 +1,141 @@
+{
+  "appVersion": "0.7.0",
+  "assumptions": [],
+  "authorization": {
+    "alarmTesting": false,
+    "allowedHours": "",
+    "authority": "",
+    "authorizedAreas": "",
+    "authorizedFacilities": "",
+    "authorizedTechniques": "",
+    "emergencyContacts": "",
+    "escalation": "",
+    "evidenceHandling": "",
+    "excludedAreas": "",
+    "interactionRules": "",
+    "lawEnforcement": "",
+    "lockTesting": false,
+    "photoRestrictions": "",
+    "prohibitedTechniques": "",
+    "recordingRestrictions": "",
+    "reference": "",
+    "restrictedHours": "",
+    "rfTesting": false,
+    "safetyRestrictions": "",
+    "socialEngineering": false,
+    "sponsor": "",
+    "status": "PLANNING",
+    "statusHistory": [],
+    "stopConditions": "",
+    "tailgating": false,
+    "team": "",
+    "vehicleTesting": false
+  },
+  "baselines": [],
+  "controls": [],
+  "createdAt": "2026-08-24T01:09:46.225Z",
+  "dailyLogs": [],
+  "events": [],
+  "evidence": [
+    {
+      "acquisition": {
+        "acquiredAt": "2026-08-01T12:00:00Z",
+        "originalFilename": "",
+        "originalLastModified": "",
+        "originalMimeType": "text/plain",
+        "originalSize": 0,
+        "sourceDescription": "",
+        "sourceDevice": ""
+      },
+      "binaryAvailable": false,
+      "blobStored": false,
+      "code": "E-0001",
+      "collector": "Fixture Analyst",
+      "createdAt": "2026-08-01T12:00:00Z",
+      "custody": [],
+      "description": "Schema 8 evidence note",
+      "designation": "ORIGINAL",
+      "embeddedMetadata": {},
+      "findingIds": [],
+      "hash": "",
+      "hashVerified": null,
+      "id": "schema8-evidence",
+      "importedAt": "2026-08-01T12:00:00Z",
+      "metadataHistory": [],
+      "mimeType": "text/plain",
+      "observationIds": [],
+      "photoLog": {
+        "caption": "",
+        "direction": "",
+        "includeInReport": false,
+        "photographer": "Fixture Analyst",
+        "relatedAssetId": "",
+        "reportOrder": 0
+      },
+      "positiveObservationIds": [],
+      "size": 0,
+      "tags": [
+        "fixture"
+      ],
+      "testIds": [],
+      "transformations": [],
+      "type": "NOTE",
+      "updatedAt": "2026-08-01T12:00:00Z",
+      "verificationHistory": []
+    }
+  ],
+  "findings": [],
+  "id": "973daaba-3d13-4223-b933-83240a29ac2c",
+  "interactions": [],
+  "issues": [],
+  "map": {
+    "activePlanId": "",
+    "imageData": null,
+    "imageName": "",
+    "markers": [],
+    "plans": []
+  },
+  "mode": "easy",
+  "notes": [],
+  "observations": [],
+  "positiveObservations": [],
+  "project": {
+    "classification": "",
+    "client": "Fixture Client",
+    "endDate": "",
+    "lead": "Fixture Lead",
+    "name": "Schema 8 Migration Fixture",
+    "purpose": "",
+    "scope": "",
+    "site": "",
+    "startDate": ""
+  },
+  "questions": [],
+  "retests": [],
+  "schemaVersion": 8,
+  "settings": {
+    "currentOperator": "Fixture Analyst",
+    "evidenceView": {
+      "group": "NONE",
+      "integrity": "ALL",
+      "layout": "GRID",
+      "query": "",
+      "tab": "VAULT",
+      "type": "ALL"
+    },
+    "includeDraftsInReport": false,
+    "lastView": "dashboard"
+  },
+  "sites": [
+    {
+      "code": "ORG-01",
+      "description": "",
+      "id": "8bc5fdf3-11ba-4276-8423-1fc13d1e259a",
+      "name": "Organization",
+      "parentId": null,
+      "type": "ORGANIZATION"
+    }
+  ],
+  "tests": [],
+  "updatedAt": "2026-08-24T01:09:46.225Z"
+}

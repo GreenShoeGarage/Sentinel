@@ -1,0 +1,15 @@
+{
+  "suite": "Report package inspection",
+  "timestamp": "2026-08-24T20:05:20.665663+00:00",
+  "passed": false,
+  "package": null,
+  "assertions": [
+    {
+      "name": "A report package download exists",
+      "passed": false,
+      "detail": "[]"
+    }
+  ],
+  "entries": [],
+  "manifest": null
+}
