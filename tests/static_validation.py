@@ -22,7 +22,7 @@ def check(name: str, condition: bool, detail="") -> None:
     print("PASS", name, detail)
 
 
-check("release-version", "APP_VERSION='0.15.0-rc.1'" in source)
+check("release-version", "APP_VERSION='0.15.0-rc.2'" in source)
 check("release-schema", "SCHEMA_VERSION=14" in source)
 check("no-remote-runtime-dependencies", not re.search(r"(?:src|href)=[\"']https?://", source, re.I))
 check("no-telemetry-endpoints", not re.search(r"google-analytics|googletagmanager|segment\.com|sentry\.io|mixpanel", source, re.I))

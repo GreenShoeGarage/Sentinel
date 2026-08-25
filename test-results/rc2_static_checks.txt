@@ -1,0 +1,25 @@
+PASS 24/24
+PASS Release Candidate 2 identity: 
+PASS Schema remains 14: 
+PASS Legacy 245 mm report cover removed: 
+PASS Letter-safe report cover is present: 4
+PASS Print headings avoid orphaning: 
+PASS Print table headings repeat: 
+PASS Print paragraphs have widow and orphan controls: 
+PASS Paged-media headers use margin boxes: 
+PASS Paged-media footers include Page X of Y counters: 
+PASS Legacy fixed-footer Page 0 counter is removed: 
+PASS Search is an accessible modal dialog: 
+PASS Search has hidden-state semantics: 
+PASS Search results use listbox semantics: 
+PASS Reduced-motion preference is honored: 
+PASS Checkboxes and radios have usable dimensions: 
+PASS Mobile checkbox targets reach 44 pixels: 
+PASS Generic select helper associates labels: 
+PASS Modal focus helper exists: 
+PASS Search close restores focus: 
+PASS Interactive row limit is explicit: 
+PASS Large project threshold is explicit: 
+PASS Large project profile is exposed: 
+PASS Register guardrail is user-visible: 
+PASS Known filter controls have accessible names: []

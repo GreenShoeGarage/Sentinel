@@ -1,5 +1,42 @@
 # SENTINEL Changelog
 
+## Version 0.15.0-rc.2 — Reporting, Accessibility, and Scale Hardening
+
+**Date:** August 25, 2026  
+**Project schema:** 14
+
+### Reporting
+
+- Corrected the Letter-size cover geometry that could create a blank second page.
+- Added print cohesion rules for headings, paragraphs, table headers, rows, and long cell values.
+- Replaced the fixed-footer page counter that rendered as `Page 0` with Cascading Style Sheets paged-media margin boxes and reliable `Page X of Y` numbering on the validated Chromium print engine.
+- Verified a representative 14-page Letter report with Executive Summary on page 2, no accidental blank pages, and correct numbering from Page 1 of 14 through Page 14 of 14.
+- Regenerated nested custom-section and evidence-selection identifiers when creating a new report revision, eliminating duplicate UUID collisions while preserving report content, ordering, relationships, and revision provenance.
+
+### Accessibility and interaction
+
+- Added programmatic label associations for generated select fields and audited filters.
+- Strengthened command-palette dialog semantics, hidden-state reporting, focus containment, Escape behavior, and focus restoration.
+- Added forward and reverse focus wrapping to record modals with trigger-focus restoration.
+- Increased checkbox and radio geometry and provided 44-pixel mobile label targets.
+- Added reduced-motion handling for nonessential animation and transition behavior.
+
+### Performance and scale
+
+- Added a 500-row interactive rendering limit with visible disclosure for large registers.
+- Applied the guardrail to generic registers, the Evidence Vault, Timeline, Coverage Matrix, and Relationship Gap Queue.
+- Preserved all underlying records for exports, reports, persistence, packages, and analysis.
+- Added a large-project profile and warning above 5,000 material records.
+- Added focused tests proving 600 records remain stored while 500 render and that the large-project state activates at the configured threshold.
+
+### Validation and release integrity
+
+- Added 24 Release Candidate 2 static hardening assertions.
+- Added 21 browser, accessibility, scale, and Portable Document Format assertions.
+- Passed 288 focused assertions across nine suites.
+- Added the representative Letter PDF, rendered contact sheet, preflight record, and final acceptance checklist.
+- Kept Project Schema 14 unchanged and retained migration from Schemas 1 through 13.
+
 ## Version 0.15.0-rc.1 — Professional Report Builder 2.0 and Release-Candidate Reconciliation
 
 **Release date:** August 24, 2026  

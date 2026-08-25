@@ -31,9 +31,9 @@ with sync_playwright() as p:
         page.wait_for_function("window.__SENTINEL_TEST__ && document.querySelector('#storageLabel').textContent.includes('IndexedDB')")
 
         check("document-title", page.title() == "SENTINEL — Physical Security Red Team Workbench", page.title())
-        check("application-version", "v0.15.0-rc.1" in page.locator(".topbar .brand small").inner_text(), page.locator(".topbar .brand small").inner_text())
+        check("application-version", "v0.15.0-rc.2" in page.locator(".topbar .brand small").inner_text(), page.locator(".topbar .brand small").inner_text())
         hook = page.evaluate("({v:__SENTINEL_TEST__.appVersion,s:__SENTINEL_TEST__.schemaVersion,a:__SENTINEL_TEST__.auditProject(__SENTINEL_TEST__.blankProject())})")
-        check("test-interface", hook["v"] == "0.15.0-rc.1" and hook["s"] == 14, hook)
+        check("test-interface", hook["v"] == "0.15.0-rc.2" and hook["s"] == 14, hook)
         check("blank-project-audit", hook["a"]["ok"], hook["a"])
         check("indexeddb-real-origin", "IndexedDB" in page.locator("#storageLabel").inner_text(), page.locator("#storageLabel").inner_text())
 

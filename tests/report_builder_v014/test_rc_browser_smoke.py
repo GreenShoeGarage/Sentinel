@@ -45,7 +45,7 @@ def run() -> None:
 
         check("Application title", page.title() == "SENTINEL — Physical Security Red Team Workbench", page.title())
         identity = page.evaluate("()=>({version:__SENTINEL_TEST__.appVersion,schema:__SENTINEL_TEST__.schemaVersion})")
-        check("Release identity", identity == {"version": "0.15.0-rc.1", "schema": 14}, identity)
+        check("Release identity", identity == {"version": "0.15.0-rc.2", "schema": 14}, identity)
         audit = page.evaluate("()=>__SENTINEL_TEST__.auditProject(__SENTINEL_TEST__.blankProject())")
         check("Blank Schema 14 project audits clean", audit.get("ok") is True, audit)
 

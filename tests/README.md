@@ -1,6 +1,6 @@
 # SENTINEL Validation Suite
 
-This directory contains the repeatable validation suite for SENTINEL Version 0.15.0 Release Candidate 1 / Project Schema 14.
+This directory contains the repeatable validation suite for SENTINEL Version 0.15.0 Release Candidate 2 / Project Schema 14.
 
 ## Requirements
 
@@ -8,6 +8,7 @@ This directory contains the repeatable validation suite for SENTINEL Version 0.1
 - Node.js for JavaScript syntax validation
 - Python Playwright
 - Chromium, Google Chrome, or a Playwright-managed Chromium build
+- PyMuPDF for focused Portable Document Format acceptance
 
 Install dependencies:
 
@@ -24,7 +25,7 @@ From the release root:
 SENTINEL_TEST_JOBS=1 SENTINEL_TEST_TIMEOUT=720 python tests/run_all.py
 ```
 
-The runner starts a temporary local Hypertext Transfer Protocol origin, executes static validation, and runs the inherited browser suites in isolated browser processes.
+The runner starts a temporary local Hypertext Transfer Protocol origin, executes static validation, and runs inherited browser suites in isolated browser processes.
 
 Optional environment variables:
 
@@ -33,11 +34,11 @@ Optional environment variables:
 - `SENTINEL_TEST_JOBS` — browser-suite parallelism
 - `SENTINEL_TEST_TIMEOUT` — per-suite timeout in seconds
 
-The full matrix requires a browser profile that permits the temporary `127.0.0.1` origin, Indexed Database, Web Cryptography, downloads, and the tested media permissions.
+The full matrix requires a browser profile that permits the temporary `127.0.0.1` origin, Indexed Database, Web Cryptography, downloads, and tested media permissions.
 
-## Release-candidate reporting matrix
+## Release Candidate 2 focused matrix
 
-Run the focused Schema 14 and Professional Report Builder 2.0 checks with:
+Run the nine focused suites with:
 
 ```bash
 python tests/static_validation.py
@@ -47,9 +48,23 @@ python tests/report_builder_v014/report_governance_semantic_checks.py
 python tests/report_builder_v014/test_report_builder_v014.py
 python tests/report_builder_v014/test_rc_browser_smoke.py
 python tests/report_builder_v014/inspect_report_package.py
+python tests/release_candidate_rc2/static_rc2_checks.py
+python tests/release_candidate_rc2/test_accessibility_pdf_performance.py
 ```
 
-The final release-candidate run passed 243 assertions across those seven suites. See `VALIDATION.md` for the exact environment boundary.
+The final focused run passes **288 assertions** across these nine suites.
+
+The two Release Candidate 2 suites specifically verify:
+
+- Letter-safe report-cover geometry
+- Paged-media running headers and Page X of Y numbering
+- Absence of Page 0 and accidental blank report pages
+- Programmatic names for audited form controls
+- Command-palette and modal focus containment and restoration
+- Reduced-motion and mobile touch-target rules
+- 500-row interactive register disclosure without data truncation
+- 5,000-record large-project detection
+- Representative Letter PDF generation and inspection
 
 ## Inherited suites
 
@@ -61,9 +76,9 @@ The inherited matrix covers the application shell, user-interface cleanup, autho
 
 `fixtures/` contains representative projects from every previously published project schema through Schema 13.
 
-`assets/` contains local image, unrelated-image, text, audio, video, and Portable Document Format samples. The two distinct image fixtures verify that a controlled report package contains the selected image and excludes unrelated evidence.
+`assets/` contains local image, unrelated-image, text, audio, video, and PDF samples. The two distinct image fixtures verify that a controlled report package contains the selected image and excludes unrelated evidence.
 
-The direct-media suite uses Chromium deterministic fake camera and microphone devices. This validates the browser capture pathways without claiming acceptance of every physical device, codec, mobile operating system, or permission policy.
+The direct-media suite uses Chromium deterministic fake camera and microphone devices. This validates browser capture pathways without claiming acceptance of every physical device, codec, mobile operating system, or permission policy.
 
 ## Managed-browser policy note
 

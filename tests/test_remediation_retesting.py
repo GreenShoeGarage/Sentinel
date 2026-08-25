@@ -116,7 +116,7 @@ with sync_playwright() as p:
 
         legacy = json.loads((FIXTURES / "schema11_from_v0.11.0.json").read_text(encoding="utf-8"))
         migrated = page.evaluate("""p => {const m=__SENTINEL_TEST__.migrateProject(p);return {schema:m.schemaVersion,app:m.appVersion,submissions:Array.isArray(m.remediationSubmissions),retests:Array.isArray(m.retests),audit:__SENTINEL_TEST__.auditProject(m)}}""", legacy)
-        check("schema11-migrates-to-schema14", migrated["schema"] == 14 and migrated["app"] == "0.15.0-rc.1", migrated)
+        check("schema11-migrates-to-schema14", migrated["schema"] == 14 and migrated["app"] == "0.15.0-rc.2", migrated)
         check("schema11-adds-remediation-and-retest-collections", migrated["submissions"] and migrated["retests"], migrated)
         check("schema11-migration-audits", migrated["audit"]["ok"], migrated["audit"])
 

@@ -1,0 +1,7 @@
+SENTINEL v0.15.0-rc.2 exploratory scale profile
+
+The timing artifact records synthetic projects with 50, 100, 250, and 500 records in each of the principal control, test, observation, evidence, and finding registers.
+
+An exploratory 2,000-record-per-register run exceeded the five-minute harness ceiling and was terminated. It is not represented as a completed benchmark. That boundary drove the 500-row interactive rendering limit and the 5,000-material-record project warning.
+
+The limits do not truncate stored project data, exports, reports, packages, or migration behavior.

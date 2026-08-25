@@ -1,0 +1,63 @@
+{
+  "suite": "SENTINEL v0.15.0-rc.2 final focused matrix",
+  "generatedAt": "2026-08-25T05:14:53.271235+00:00",
+  "passed": true,
+  "assertionTotal": 288,
+  "suiteCount": 9,
+  "suites": [
+    {
+      "name": "Full-application static validation",
+      "assertions": 31,
+      "passed": true,
+      "artifact": "test-results/static_application_validation.txt"
+    },
+    {
+      "name": "Schema migration and export validation",
+      "assertions": 50,
+      "passed": true,
+      "artifact": "test-results/migration_validation.txt"
+    },
+    {
+      "name": "Report Builder static implementation checks",
+      "assertions": 29,
+      "passed": true,
+      "artifact": "test-results/static_release_results.json"
+    },
+    {
+      "name": "Report-governance semantic source checks",
+      "assertions": 43,
+      "passed": true,
+      "artifact": "test-results/report_governance_semantic.json"
+    },
+    {
+      "name": "Professional Report Builder browser acceptance",
+      "assertions": 59,
+      "passed": true,
+      "artifact": "test-results/report_builder_results.json"
+    },
+    {
+      "name": "Broad release-candidate browser smoke",
+      "assertions": 23,
+      "passed": true,
+      "artifact": "test-results/rc_browser_smoke.json"
+    },
+    {
+      "name": "Controlled report-package inspection",
+      "assertions": 8,
+      "passed": true,
+      "artifact": "test-results/report_package_inspection.json"
+    },
+    {
+      "name": "Release Candidate 2 static hardening checks",
+      "assertions": 24,
+      "passed": true,
+      "artifact": "test-results/rc2_static_checks.json"
+    },
+    {
+      "name": "Release Candidate 2 accessibility, scale, and PDF acceptance",
+      "assertions": 21,
+      "passed": true,
+      "artifact": "test-results/rc2_acceptance.json"
+    }
+  ]
+}

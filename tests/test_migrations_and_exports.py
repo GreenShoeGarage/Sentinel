@@ -47,7 +47,7 @@ with sync_playwright() as p:
               const migrated=__SENTINEL_TEST__.migrateProject(project);
               return {schema:migrated.schemaVersion,app:migrated.appVersion,audit:__SENTINEL_TEST__.auditProject(migrated),evidence:migrated.evidence};
             }""", raw)
-            check(f"{path.stem}-migrates-to-schema14", result["schema"] == 14 and result["app"] == "0.15.0-rc.1", result)
+            check(f"{path.stem}-migrates-to-schema14", result["schema"] == 14 and result["app"] == "0.15.0-rc.2", result)
             check(f"{path.stem}-audit-clean", result["audit"]["ok"], result["audit"])
             check(
                 f"{path.stem}-evidence-provenance-normalized",

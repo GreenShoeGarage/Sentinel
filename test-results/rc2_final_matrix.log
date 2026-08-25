@@ -1,0 +1,10 @@
+PASS 288/288 across 9 suites
+PASS 31/31 Full-application static validation — test-results/static_application_validation.txt
+PASS 50/50 Schema migration and export validation — test-results/migration_validation.txt
+PASS 29/29 Report Builder static implementation checks — test-results/static_release_results.json
+PASS 43/43 Report-governance semantic source checks — test-results/report_governance_semantic.json
+PASS 59/59 Professional Report Builder browser acceptance — test-results/report_builder_results.json
+PASS 23/23 Broad release-candidate browser smoke — test-results/rc_browser_smoke.json
+PASS 8/8 Controlled report-package inspection — test-results/report_package_inspection.json
+PASS 24/24 Release Candidate 2 static hardening checks — test-results/rc2_static_checks.json
+PASS 21/21 Release Candidate 2 accessibility, scale, and PDF acceptance — test-results/rc2_acceptance.json

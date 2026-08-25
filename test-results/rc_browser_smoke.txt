@@ -1,6 +1,6 @@
 PASS 23/23
 PASS Application title: SENTINEL — Physical Security Red Team Workbench
-PASS Release identity: {'version': '0.15.0-rc.1', 'schema': 14}
+PASS Release identity: {'version': '0.15.0-rc.2', 'schema': 14}
 PASS Blank Schema 14 project audits clean: {'ok': True, 'errors': [], 'warnings': ['No site or floor plan has been loaded.']}
 PASS Advanced workflow exposes substantial navigation: ['dashboard', 'project', 'map', 'controls', 'tests', 'field', 'observations', 'evidence', 'daily', 'timeline', 'interactions', 'notes', 'findings', 'coverage', 'trace', 'chains', 'retest', 'baselines', 'report', 'registers', 'security']
 PASS Every visible workflow destination opens: []
@@ -91,7 +91,7 @@ Freeze a local recovery point
 ↶
 Recovery
 Open recovery checkpoints
-PASS Desktop sidebar collapse preserves workspace width: {'before': {'x': 237, 'y': 90.1875, 'width': 1203, 'height': 878.875}, 'after': {'x': 42.09375, 'y': 90.1875, 'width': 1397.90625, 'height': 878.875}}
+PASS Desktop sidebar collapse preserves workspace width: {'before': {'x': 237, 'y': 90.1875, 'width': 1203, 'height': 878.875}, 'after': {'x': 3.890625, 'y': 90.1875, 'width': 1436.109375, 'height': 878.875}}
 PASS Professional Report Builder 2.0 renders in full application: 
 PASS Report Builder exposes composition through governance: 
 PASS Mobile navigation drawer opens: 
@@ -101,4 +101,4 @@ PASS Mobile shell avoids page-level horizontal overflow: {'scroll': 390, 'client
 PASS Mobile footer remains visible and compact: {'scroll': 390, 'client': 390, 'footer': 28.9375}
 PASS No uncaught browser exceptions: []
 PASS No material console errors: []
-PASS (advisory) Opaque-origin storage notes documented: ["SecurityError: Failed to execute 'open' on 'IDBFactory': access to the Indexed Database API is denied in this context.\n    at <anonymous>:698:83\n    at new Promise (<anonymous>)\n    at openDB (<anonymous>:698:32)\n    at initializeStorage (<anonymous>:788:12)\n    at <anonymous>:1520:1\n    at <anonymous>:1522:3", 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\n    at <anonymous>:804:860\n    at save (<anonymous>:804:1545)\n    at <anonymous>:826:403', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\n    at <anonymous>:804:860\n    at save (<anonymous>:804:1545)\n    at <anonymous>:826:403']
+PASS (advisory) Opaque-origin storage notes documented: ["SecurityError: Failed to execute 'open' on 'IDBFactory': access to the Indexed Database API is denied in this context.\n    at <anonymous>:698:83\n    at new Promise (<anonymous>)\n    at openDB (<anonymous>:698:32)\n    at initializeStorage (<anonymous>:788:12)\n    at <anonymous>:1526:1\n    at <anonymous>:1528:3", 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\n    at <anonymous>:804:860\n    at save (<anonymous>:804:1545)\n    at <anonymous>:799:52', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\n    at <anonymous>:804:860\n    at save (<anonymous>:804:1545)\n    at <anonymous>:826:403', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\n    at <anonymous>:804:860\n    at save (<anonymous>:804:1545)\n    at <anonymous>:826:403']

@@ -96,7 +96,7 @@ with sync_playwright() as p:
         page.evaluate("__SENTINEL_TEST__.setView('chains')")
         page.wait_for_selector("#chainsView.active")
 
-        check("release-version-and-schema", page.evaluate("[__SENTINEL_TEST__.appVersion,__SENTINEL_TEST__.schemaVersion]") == ["0.15.0-rc.1", 14])
+        check("release-version-and-schema", page.evaluate("[__SENTINEL_TEST__.appVersion,__SENTINEL_TEST__.schemaVersion]") == ["0.15.0-rc.2", 14])
         check("advanced-control-chain-navigation", page.locator('[data-view="chains"]').count() == 1 and page.locator('[data-view="chains"]').is_visible())
         check("control-chain-workspace-rendered", "Control Chains & Defense in Depth" in page.locator("#chainsView").inner_text())
         check("control-chain-safety-language", "not attack instructions" in page.locator("#chainsView").inner_text().lower())

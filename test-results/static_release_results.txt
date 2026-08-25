@@ -1,6 +1,6 @@
 PASS 29/29
-PASS Application source exists: 844473
-PASS Application identifies Version 0.15.0-rc.1: 
+PASS Application source exists: 852154
+PASS Application identifies Version 0.15.0-rc.2: 
 PASS Application identifies Project Schema 14: 
 PASS No duplicate static element identifiers: []
 PASS No remote script or stylesheet dependencies: []

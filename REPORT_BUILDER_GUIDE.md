@@ -1,6 +1,6 @@
 # SENTINEL Professional Report Builder 2.0 Guide
 
-This guide covers the governed reporting workflow in SENTINEL Version 0.15.0 Release Candidate 1 / Project Schema 14.
+This guide covers the governed reporting workflow in SENTINEL Version 0.15.0 Release Candidate 2 / Project Schema 14.
 
 ## 1. Prepare the assessment record
 
@@ -64,6 +64,8 @@ Each built-in section can be included or excluded and moved within the report or
 Create custom sections for client-specific material such as Management Response, Facility Context, Corrective Action Plan, Distribution Statement, or Contractual Notes.
 
 Custom sections persist through autosave, project packages, migration, revision creation, review, approval, and Final Issue.
+
+When a new report revision is created, SENTINEL generates new nested identifiers for copied custom sections and evidence selections while preserving their visible content, order, relationships, and revision provenance. This prevents identifier collisions between the issued revision and its successor.
 
 ## 4. Select report evidence
 
@@ -190,7 +192,9 @@ Use for machine-readable exchange, archival inspection, or downstream tooling. I
 
 ### Portable Document Format
 
-Use browser printing to create a PDF. Review every final PDF visually. Confirm page breaks, headers, footers, markings, captions, tables, signature blocks, and appendix pagination.
+Use browser printing to create a PDF. Release Candidate 2 uses paged-media margin boxes for running markings and Page X of Y numbering on Chromium-based print engines, and its Letter-size cover geometry avoids the former blank second page.
+
+Review every final PDF visually. Confirm page breaks, headers, footers, page numbering, markings, captions, tables, signature blocks, and appendix pagination. Firefox, Safari, WebKit, printer drivers, scaling, and paper settings may paginate differently and remain part of target-browser acceptance.
 
 ### Controlled report package
 

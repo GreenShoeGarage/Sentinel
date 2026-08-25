@@ -1,8 +1,8 @@
 {
   "suite": "Report package inspection",
-  "timestamp": "2026-08-25T00:13:44.024541+00:00",
+  "timestamp": "2026-08-25T05:13:42.623449+00:00",
   "passed": true,
-  "package": "/mnt/data/SENTINEL_v0.15.0-rc.1/test-results/validation-client-authorized-physical-security-assessment-report-rev-a-report-package.zip",
+  "package": "/mnt/data/sentinel_rc2_work/app/test-results/validation-client-authorized-physical-security-assessment-report-rev-a-report-package.zip",
   "assertions": [
     {
       "name": "A report package download exists",
@@ -37,7 +37,7 @@
     {
       "name": "Manifest identifies the report revision or issue",
       "passed": true,
-      "detail": "{\"format\": \"SENTINEL_REPORT_PACKAGE\", \"formatVersion\": 2, \"createdAt\": \"2026-08-25T00:13:37.229Z\", \"appVersion\": \"0.15.0-rc.1\", \"schemaVersion\": 14, \"report\": {\"id\": \"id-1787616813501-7tqdq7znr0y\", \"code\": \"REPORT-001\", \"revision\": \"A\", \"status\": \"FINAL_ISSUE\", \"title\": \"Authorized Physical Security Assessment Report\", \"issueFingerprint\": \"93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770\", \"issuedAt\": \"2026-08-25T00:13:35.531Z\"}, \"files\": [{\"path\": \"report/report.html\", \"mimeType\": \"text/html\", \"bytes\": 30875, \"sha256\": \"6dcb4d9dd29aef6aeca4379f0a96cb69b330fdc7525e541332795850cc7a4ea3\"}, {\"path\": \"report/report.md\", \"mimeType\": \"text/markdown\", \"bytes\": 4582, \"sha256\": \"a665604b1bf4aaf05995043257e3a0d1e6abe3104d78eb1a98f61784b9f44904\"}, {\"path\": \"report/report.json\", \"mimeType\": \"application/json\", \"bytes\": 16191, \"sha256\": \"f63be2da92fd15da2070e3504709dc238286f84e13c884530482a99c1d3b38c6\"}, {\"path\": \"evidence/001-ev-sel-001-selected-report-evidence-png\", \"mimeType\": \"i"
+      "detail": "{\"format\": \"SENTINEL_REPORT_PACKAGE\", \"formatVersion\": 2, \"createdAt\": \"2026-08-25T05:13:02.323Z\", \"appVersion\": \"0.15.0-rc.2\", \"schemaVersion\": 14, \"report\": {\"id\": \"id-1787634775256-a2xgzlw2cyq\", \"code\": \"REPORT-001\", \"revision\": \"A\", \"status\": \"FINAL_ISSUE\", \"title\": \"Authorized Physical Security Assessment Report\", \"issueFingerprint\": \"30dd8e4d24c8f9ecc590853b1ac8f6de614b2c7ed68b63150aac66d314bf1ab4\", \"issuedAt\": \"2026-08-25T05:12:58.619Z\"}, \"files\": [{\"path\": \"report/report.html\", \"mimeType\": \"text/html\", \"bytes\": 31130, \"sha256\": \"906b1dd2f9000eeb434f5eb0f9c0accdd9229b13bdc2fb6fe85fba8b682b1039\"}, {\"path\": \"report/report.md\", \"mimeType\": \"text/markdown\", \"bytes\": 4582, \"sha256\": \"6ac4c716477c4d222e0a5e2ca505362989e2b83c4b765c906cd6f9fc129d48d1\"}, {\"path\": \"report/report.json\", \"mimeType\": \"application/json\", \"bytes\": 16190, \"sha256\": \"dd58e6e7f585043216f7262c2b07e2b6f6751c402254481b1b992896cf4106b0\"}, {\"path\": \"evidence/001-ev-sel-001-selected-report-evidence-png\", \"mimeType\": \"i"
     },
     {
       "name": "Package evidence is explicitly manifested",
@@ -55,36 +55,36 @@
   "manifest": {
     "format": "SENTINEL_REPORT_PACKAGE",
     "formatVersion": 2,
-    "createdAt": "2026-08-25T00:13:37.229Z",
-    "appVersion": "0.15.0-rc.1",
+    "createdAt": "2026-08-25T05:13:02.323Z",
+    "appVersion": "0.15.0-rc.2",
     "schemaVersion": 14,
     "report": {
-      "id": "id-1787616813501-7tqdq7znr0y",
+      "id": "id-1787634775256-a2xgzlw2cyq",
       "code": "REPORT-001",
       "revision": "A",
       "status": "FINAL_ISSUE",
       "title": "Authorized Physical Security Assessment Report",
-      "issueFingerprint": "93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770",
-      "issuedAt": "2026-08-25T00:13:35.531Z"
+      "issueFingerprint": "30dd8e4d24c8f9ecc590853b1ac8f6de614b2c7ed68b63150aac66d314bf1ab4",
+      "issuedAt": "2026-08-25T05:12:58.619Z"
     },
     "files": [
       {
         "path": "report/report.html",
         "mimeType": "text/html",
-        "bytes": 30875,
-        "sha256": "6dcb4d9dd29aef6aeca4379f0a96cb69b330fdc7525e541332795850cc7a4ea3"
+        "bytes": 31130,
+        "sha256": "906b1dd2f9000eeb434f5eb0f9c0accdd9229b13bdc2fb6fe85fba8b682b1039"
       },
       {
         "path": "report/report.md",
         "mimeType": "text/markdown",
         "bytes": 4582,
-        "sha256": "a665604b1bf4aaf05995043257e3a0d1e6abe3104d78eb1a98f61784b9f44904"
+        "sha256": "6ac4c716477c4d222e0a5e2ca505362989e2b83c4b765c906cd6f9fc129d48d1"
       },
       {
         "path": "report/report.json",
         "mimeType": "application/json",
-        "bytes": 16191,
-        "sha256": "f63be2da92fd15da2070e3504709dc238286f84e13c884530482a99c1d3b38c6"
+        "bytes": 16190,
+        "sha256": "dd58e6e7f585043216f7262c2b07e2b6f6751c402254481b1b992896cf4106b0"
       },
       {
         "path": "evidence/001-ev-sel-001-selected-report-evidence-png",

@@ -1,6 +1,6 @@
 {
   "suite": "Professional Report Builder 2.0 browser acceptance",
-  "started": "2026-08-25T00:13:32.317179+00:00",
+  "started": "2026-08-25T05:12:51.365667+00:00",
   "assertions": [
     {
       "name": "Browser host uses documented SHA-256 bridge",
@@ -18,7 +18,7 @@
       "name": "Release identity is reconciled",
       "passed": true,
       "advisory": false,
-      "detail": "{'version': '0.15.0-rc.1', 'schema': 14}"
+      "detail": "{'version': '0.15.0-rc.2', 'schema': 14}"
     },
     {
       "name": "Report navigation destination exists",
@@ -42,19 +42,19 @@
       "name": "Composition fields persist",
       "passed": true,
       "advisory": false,
-      "detail": "{'handling': 'Distribute only to the client sponsor and named physical-security officials.', 'custom': [{'title': 'Management Response', 'body': 'Management responses may be recorded here without modifying the validated finding record.'}], 'order': ['cover', 'executiveSummary', 'scopeAuthorization', 'methodology', 'siteOverview', 'securityArchitecture', 'coverage', 'findings', 'positiveObservations', 'defenseInDepth', 'remediation', 'retesting', 'baselines', 'limitations', 'conclusion', 'approval', 'custom:id-1787616813883-5rvg30o8rkx', 'appendices']}"
+      "detail": "{'handling': 'Distribute only to the client sponsor and named physical-security officials.', 'custom': [{'title': 'Management Response', 'body': 'Management responses may be recorded here without modifying the validated finding record.'}], 'order': ['cover', 'executiveSummary', 'scopeAuthorization', 'methodology', 'siteOverview', 'securityArchitecture', 'coverage', 'findings', 'positiveObservations', 'defenseInDepth', 'remediation', 'retesting', 'baselines', 'limitations', 'conclusion', 'approval', 'custom:id-1787634775845-t0jg9qxrqte', 'appendices']}"
     },
     {
       "name": "Custom report section persists",
       "passed": true,
       "advisory": false,
-      "detail": "{'handling': 'Distribute only to the client sponsor and named physical-security officials.', 'custom': [{'title': 'Management Response', 'body': 'Management responses may be recorded here without modifying the validated finding record.'}], 'order': ['cover', 'executiveSummary', 'scopeAuthorization', 'methodology', 'siteOverview', 'securityArchitecture', 'coverage', 'findings', 'positiveObservations', 'defenseInDepth', 'remediation', 'retesting', 'baselines', 'limitations', 'conclusion', 'approval', 'custom:id-1787616813883-5rvg30o8rkx', 'appendices']}"
+      "detail": "{'handling': 'Distribute only to the client sponsor and named physical-security officials.', 'custom': [{'title': 'Management Response', 'body': 'Management responses may be recorded here without modifying the validated finding record.'}], 'order': ['cover', 'executiveSummary', 'scopeAuthorization', 'methodology', 'siteOverview', 'securityArchitecture', 'coverage', 'findings', 'positiveObservations', 'defenseInDepth', 'remediation', 'retesting', 'baselines', 'limitations', 'conclusion', 'approval', 'custom:id-1787634775845-t0jg9qxrqte', 'appendices']}"
     },
     {
       "name": "Custom section is ordered before appendices",
       "passed": true,
       "advisory": false,
-      "detail": "['cover', 'executiveSummary', 'scopeAuthorization', 'methodology', 'siteOverview', 'securityArchitecture', 'coverage', 'findings', 'positiveObservations', 'defenseInDepth', 'remediation', 'retesting', 'baselines', 'limitations', 'conclusion', 'approval', 'custom:id-1787616813883-5rvg30o8rkx', 'appendices']"
+      "detail": "['cover', 'executiveSummary', 'scopeAuthorization', 'methodology', 'siteOverview', 'securityArchitecture', 'coverage', 'findings', 'positiveObservations', 'defenseInDepth', 'remediation', 'retesting', 'baselines', 'limitations', 'conclusion', 'approval', 'custom:id-1787634775845-t0jg9qxrqte', 'appendices']"
     },
     {
       "name": "Appendix selection persists",
@@ -84,7 +84,7 @@
       "name": "Preview renders substantial content",
       "passed": true,
       "advisory": false,
-      "detail": "6136"
+      "detail": "6135"
     },
     {
       "name": "Custom section appears in preview",
@@ -108,13 +108,13 @@
       "name": "Draft submits for independent review",
       "passed": true,
       "advisory": false,
-      "detail": "{'requestedBy': 'Validation Assessment Lead', 'requestedAt': '2026-08-25T00:13:35.030Z', 'reviewer': 'Independent Reviewer', 'reviewerRole': 'Security Reviewer', 'decision': 'PENDING', 'reviewedAt': '', 'rationale': 'Composition and distribution boundaries are ready for independent review.'}"
+      "detail": "{'requestedBy': 'Validation Assessment Lead', 'requestedAt': '2026-08-25T05:12:57.782Z', 'reviewer': 'Independent Reviewer', 'reviewerRole': 'Security Reviewer', 'decision': 'PENDING', 'reviewedAt': '', 'rationale': 'Composition and distribution boundaries are ready for independent review.'}"
     },
     {
       "name": "Independent review and approval persist",
       "passed": true,
       "advisory": false,
-      "detail": "{'approvedBy': 'Approval Authority', 'approverRole': 'Director of Security', 'approvedAt': '2026-08-25T00:13:35.279Z', 'rationale': 'Approved for controlled Final Issue after independent review.'}"
+      "detail": "{'approvedBy': 'Approval Authority', 'approverRole': 'Director of Security', 'approvedAt': '2026-08-25T05:12:58.243Z', 'rationale': 'Approved for controlled Final Issue after independent review.'}"
     },
     {
       "name": "Failed issue hashing is transactionally atomic",
@@ -126,13 +126,13 @@
       "name": "Final Issue is sealed with SHA-256",
       "passed": true,
       "advisory": false,
-      "detail": "{'status': 'FINAL_ISSUE', 'locked': True, 'hash': '93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770', 'issue': {'issuedBy': 'Issuing Authority', 'issuedAt': '2026-08-25T00:13:35.531Z', 'note': 'Final Issue created after independent review and output verification.', 'issueNumber': 'VAL-ISSUE-001', 'distribution': 'Controlled distribution to the client sponsor and named security officials.'}, 'snapshot': True, 'state': {'locked': True, 'stale': False, 'currentFingerprint': 'fp-f161469587f3e9ab000010d5', 'reviewTampered': False, 'approvalTampered': False, 'issueTampered': False, 'label': 'FINAL ISSUE'}}"
+      "detail": "{'status': 'FINAL_ISSUE', 'locked': True, 'hash': '30dd8e4d24c8f9ecc590853b1ac8f6de614b2c7ed68b63150aac66d314bf1ab4', 'issue': {'issuedBy': 'Issuing Authority', 'issuedAt': '2026-08-25T05:12:58.619Z', 'note': 'Final Issue created after independent review and output verification.', 'issueNumber': 'VAL-ISSUE-001', 'distribution': 'Controlled distribution to the client sponsor and named security officials.'}, 'snapshot': True, 'state': {'locked': True, 'stale': False, 'currentFingerprint': 'fp-6d70658b48ec3eef000010d4', 'reviewTampered': False, 'approvalTampered': False, 'issueTampered': False, 'label': 'FINAL ISSUE'}}"
     },
     {
       "name": "Final Issue preserves issuer metadata",
       "passed": true,
       "advisory": false,
-      "detail": "{'issuedBy': 'Issuing Authority', 'issuedAt': '2026-08-25T00:13:35.531Z', 'note': 'Final Issue created after independent review and output verification.', 'issueNumber': 'VAL-ISSUE-001', 'distribution': 'Controlled distribution to the client sponsor and named security officials.'}"
+      "detail": "{'issuedBy': 'Issuing Authority', 'issuedAt': '2026-08-25T05:12:58.619Z', 'note': 'Final Issue created after independent review and output verification.', 'issueNumber': 'VAL-ISSUE-001', 'distribution': 'Controlled distribution to the client sponsor and named security officials.'}"
     },
     {
       "name": "Final Issue contains a sealed assessment snapshot",
@@ -150,7 +150,7 @@
       "name": "Standalone HTML export",
       "passed": true,
       "advisory": false,
-      "detail": "{'file': 'validation-client-authorized-physical-security-assessment-report-rev-a.html', 'bytes': 30875}"
+      "detail": "{'file': 'validation-client-authorized-physical-security-assessment-report-rev-a.html', 'bytes': 31130}"
     },
     {
       "name": "Markdown export",
@@ -162,7 +162,7 @@
       "name": "Structured JSON export",
       "passed": true,
       "advisory": false,
-      "detail": "{'file': 'validation-client-authorized-physical-security-assessment-report-rev-a.json', 'bytes': 16191}"
+      "detail": "{'file': 'validation-client-authorized-physical-security-assessment-report-rev-a.json', 'bytes': 16190}"
     },
     {
       "name": "HTML export contains governed content",
@@ -192,13 +192,13 @@
       "name": "JSON export preserves issue fingerprint",
       "passed": true,
       "advisory": false,
-      "detail": "93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770"
+      "detail": "30dd8e4d24c8f9ecc590853b1ac8f6de614b2c7ed68b63150aac66d314bf1ab4"
     },
     {
       "name": "JSON export preserves one explicit evidence selection",
       "passed": true,
       "advisory": false,
-      "detail": "[{'selection': {'id': 'id-1787616814511-a1spvef0bfg', 'evidenceId': 'report-evidence-selected', 'sectionKey': 'executiveSummary', 'findingId': '', 'caption': 'Selected report photograph \u2014 authorized lobby control point.', 'order': 1, 'include': True}, 'metadata': {'type': 'PHOTO', 'mimeType': 'image/png', 'blobStored': True, 'binaryAvailable': True, 'hashVerified': True, 'designation': 'ORIGINAL', 'collector': 'Validation Analyst', 'location': 'Validation Site', 'createdAt': '2026-08-25T00:13:33.524Z', 'importedAt': '2026-08-25T00:13:33.524Z', 'verificationHistory': [], 'custody': [], 'transformations': [], 'metadataHistory': [], 'tags': ['report-validation'], 'acquisition': {'acquiredAt': '2026-08-25T00:13:33.524Z', 'sourceDevice': 'Validation fixture', 'sourceDescription': 'Report-package boundary test', 'originalFilename': 'selected-report-evidence.png', 'originalMimeType': 'image/png', 'originalSize': 4991, 'originalLastModified': '2026-08-25T00:13:33.524Z'}, 'archived': False, 'id': 'report-evidence-selected', 'code': 'EV-SEL-001', 'filename': 'selected-report-evidence.png', 'size': 4991, 'hash': '80025c463095217ae5879ce48ca0fd42a402dcfa1c61d0b9612b8e5be6f91e51', 'description': 'Selected evidence for the governed report.', 'photoLog': {'caption': 'Selected report photograph', 'direction': 'North', 'photographer': 'Validation Analyst', 'relatedAssetId': '', 'includeInReport': True, 'reportOrder': 1}, 'testIds': [], 'observationIds': [], 'findingIds': [], 'positiveObservationIds': [], 'testId': '', 'observationId': '', 'findingId': '', 'positiveObservationId': '', 'locationId': '', 'controlId': '', 'originalEvidenceId': '', 'parentEvidenceId': '', 'derivationNote': '', 'updatedAt': '2026-08-25T00:13:33.524Z', 'embeddedMetadata': {}, 'binaryLocked': True, 'lastVerifiedAt': '', 'thumbnailStatus': '', 'previewWarning': ''}}]"
+      "detail": "[{'selection': {'id': 'id-1787634776771-9ffqcd05bb9', 'evidenceId': 'report-evidence-selected', 'sectionKey': 'executiveSummary', 'findingId': '', 'caption': 'Selected report photograph \u2014 authorized lobby control point.', 'order': 1, 'include': True}, 'metadata': {'type': 'PHOTO', 'mimeType': 'image/png', 'blobStored': True, 'binaryAvailable': True, 'hashVerified': True, 'designation': 'ORIGINAL', 'collector': 'Validation Analyst', 'location': 'Validation Site', 'createdAt': '2026-08-25T05:12:55.343Z', 'importedAt': '2026-08-25T05:12:55.343Z', 'verificationHistory': [], 'custody': [], 'transformations': [], 'metadataHistory': [], 'tags': ['report-validation'], 'acquisition': {'acquiredAt': '2026-08-25T05:12:55.343Z', 'sourceDevice': 'Validation fixture', 'sourceDescription': 'Report-package boundary test', 'originalFilename': 'selected-report-evidence.png', 'originalMimeType': 'image/png', 'originalSize': 4991, 'originalLastModified': '2026-08-25T05:12:55.343Z'}, 'archived': False, 'id': 'report-evidence-selected', 'code': 'EV-SEL-001', 'filename': 'selected-report-evidence.png', 'size': 4991, 'hash': '80025c463095217ae5879ce48ca0fd42a402dcfa1c61d0b9612b8e5be6f91e51', 'description': 'Selected evidence for the governed report.', 'photoLog': {'caption': 'Selected report photograph', 'direction': 'North', 'photographer': 'Validation Analyst', 'relatedAssetId': '', 'includeInReport': True, 'reportOrder': 1}, 'testIds': [], 'observationIds': [], 'findingIds': [], 'positiveObservationIds': [], 'testId': '', 'observationId': '', 'findingId': '', 'positiveObservationId': '', 'locationId': '', 'controlId': '', 'originalEvidenceId': '', 'parentEvidenceId': '', 'derivationNote': '', 'updatedAt': '2026-08-25T05:12:55.343Z', 'embeddedMetadata': {}, 'binaryLocked': True, 'lastVerifiedAt': '', 'thumbnailStatus': '', 'previewWarning': ''}}]"
     },
     {
       "name": "Standalone report document title is governed",
@@ -219,10 +219,10 @@
       "detail": "{'scroll': 1280, 'client': 1280, 'sections': 17}"
     },
     {
-      "name": "Print-media controls activate",
+      "name": "Paged-media print controls activate",
       "passed": true,
       "advisory": false,
-      "detail": "{'header': 'block', 'footer': 'block', 'pageBreaks': 10, 'coverMinHeight': '925.984px'}"
+      "detail": "{'legacyHeader': 'none', 'legacyFooter': 'none', 'pageBreaks': 10, 'coverMinHeight': '888.189px', 'pagedHeader': True, 'pagedFooter': True}"
     },
     {
       "name": "Controlled report package downloads",
@@ -246,7 +246,7 @@
       "name": "Report package manifest identifies Final Issue",
       "passed": true,
       "advisory": false,
-      "detail": "{'id': 'id-1787616813501-7tqdq7znr0y', 'code': 'REPORT-001', 'revision': 'A', 'status': 'FINAL_ISSUE', 'title': 'Authorized Physical Security Assessment Report', 'issueFingerprint': '93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770', 'issuedAt': '2026-08-25T00:13:35.531Z'}"
+      "detail": "{'id': 'id-1787634775256-a2xgzlw2cyq', 'code': 'REPORT-001', 'revision': 'A', 'status': 'FINAL_ISSUE', 'title': 'Authorized Physical Security Assessment Report', 'issueFingerprint': '30dd8e4d24c8f9ecc590853b1ac8f6de614b2c7ed68b63150aac66d314bf1ab4', 'issuedAt': '2026-08-25T05:12:58.619Z'}"
     },
     {
       "name": "Report package contains exactly the explicitly selected evidence binary",
@@ -300,7 +300,7 @@
       "name": "Live project divergence is detected",
       "passed": true,
       "advisory": false,
-      "detail": "{'locked': True, 'stale': True, 'currentFingerprint': 'fp-e59e0d76f8c8a6370000109a', 'reviewTampered': False, 'approvalTampered': False, 'issueTampered': False, 'label': 'FINAL ISSUE'}"
+      "detail": "{'locked': True, 'stale': True, 'currentFingerprint': 'fp-60d4a922bd5a686200001099', 'reviewTampered': False, 'approvalTampered': False, 'issueTampered': False, 'label': 'FINAL ISSUE'}"
     },
     {
       "name": "Issued report rendering remains sealed after divergence",
@@ -318,13 +318,13 @@
       "name": "New revision opens as editable Draft",
       "passed": true,
       "advisory": false,
-      "detail": "{'status': 'DRAFT', 'revision': 'B', 'sourceRevisionId': 'id-1787616813501-h2u8puse9j'}"
+      "detail": "{'status': 'DRAFT', 'revision': 'B', 'sourceRevisionId': 'id-1787634775256-spkcazmh39'}"
     },
     {
       "name": "New revision inherits sealed custom sections",
       "passed": true,
       "advisory": false,
-      "detail": "[{'id': 'id-1787616813883-5rvg30o8rkx', 'title': 'Management Response', 'body': 'Management responses may be recorded here without modifying the validated finding record.', 'included': True, 'createdAt': '2026-08-25T00:13:33.883Z', 'updatedAt': '2026-08-25T00:13:33.947Z'}]"
+      "detail": "[{'id': 'id-1787634783171-gfqrc9ngled', 'title': 'Management Response', 'body': 'Management responses may be recorded here without modifying the validated finding record.', 'included': True, 'createdAt': '2026-08-25T05:13:03.171Z', 'updatedAt': '2026-08-25T05:13:03.171Z'}]"
     },
     {
       "name": "New revision composition is editable",
@@ -354,14 +354,14 @@
       "name": "Environment storage console notes",
       "passed": true,
       "advisory": true,
-      "detail": "[\"SecurityError: Failed to execute 'open' on 'IDBFactory': access to the Indexed Database API is denied in this context.\\n    at <anonymous>:698:83\\n    at new Promise (<anonymous>)\\n    at openDB (<anonymous>:698:32)\\n    at initializeStorage (<anonymous>:788:12)\\n    at <anonymous>:1520:1\\n    at <anonymous>:1522:3\", 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:799:52', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:799:52', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:1393:1745\\n    at async $.onclick (<anonymous>:1424:300)', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:1393:1745\\n    at async $.onclick (<anonymous>:1424:300)', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at exportReportPackage (<anonymous>:1382:2602)']"
+      "detail": "[\"SecurityError: Failed to execute 'open' on 'IDBFactory': access to the Indexed Database API is denied in this context.\\n    at <anonymous>:698:83\\n    at new Promise (<anonymous>)\\n    at openDB (<anonymous>:698:32)\\n    at initializeStorage (<anonymous>:788:12)\\n    at <anonymous>:1526:1\\n    at <anonymous>:1528:3\", 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:799:52', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:799:52', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:799:52', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:799:52', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:1396:1745\\n    at async $.onclick (<anonymous>:1429:300)', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:1396:1745\\n    at async $.onclick (<anonymous>:1429:300)', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at exportReportPackage (<anonymous>:1385:2602)', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:799:52']"
     }
   ],
   "downloads": [
     {
       "type": "Standalone HTML export",
       "file": "validation-client-authorized-physical-security-assessment-report-rev-a.html",
-      "bytes": 30875
+      "bytes": 31130
     },
     {
       "type": "Markdown export",
@@ -371,14 +371,14 @@
     {
       "type": "Structured JSON export",
       "file": "validation-client-authorized-physical-security-assessment-report-rev-a.json",
-      "bytes": 16191
+      "bytes": 16190
     },
     {
       "type": "Controlled report package",
       "file": "validation-client-authorized-physical-security-assessment-report-rev-a-report-package.zip",
-      "bytes": 59104
+      "bytes": 59358
     }
   ],
-  "completed": "2026-08-25T00:13:38.286719+00:00",
+  "completed": "2026-08-25T05:13:04.210519+00:00",
   "passed": true
 }

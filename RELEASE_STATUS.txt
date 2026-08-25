@@ -1,43 +1,37 @@
-SENTINEL 0.15.0-rc.1 — RELEASE STATUS
-
-Project Schema: 14
-Release date: August 24, 2026
-Classification: Release Candidate
+SENTINEL 0.15.0-rc.2 — RELEASE STATUS
+Project Schema 14
+Date: August 25, 2026
 
 DECISION
-Professional Report Builder 2.0 is implemented and passed the focused final review matrix. This release is suitable for controlled evaluation and final operational acceptance. It is not yet declared Version 1.0.
+Ready for controlled operational acceptance. Not yet approved as Version 1.0.
 
-SUPERSESSION NOTICE
-The earlier archive labeled SENTINEL v0.14.0 is superseded. Its application source remained Version 0.13.5 / Schema 13 and did not contain a reconciled, validated Schema 14 Report Builder 2.0 implementation.
+WHAT THIS RELEASE COMPLETES
+- Reconciled Professional Report Builder 2.0 implementation
+- Governed report composition, review, approval, Final Issue, revision, and divergence workflow
+- Selected-evidence report-package boundary
+- Letter-size pagination without a blank second page
+- Reliable Page X of Y numbering through paged-media margin boxes
+- Unique nested identifiers when creating a new report revision
+- Programmatic form labels and focused keyboard-dialog improvements
+- 500-row interactive register guardrails and a 5,000-record project-scale warning
+- Reconciled source, documentation, focused tests, validation artifacts, manifest, and checksums
 
-EXECUTED RELEASE-CANDIDATE VALIDATION
-243 assertions passed across seven suites:
-- 31 full-application static checks
-- 50 migration and export checks
-- 29 report static checks
-- 43 report-governance semantic checks
-- 59 Report Builder browser checks
-- 23 broad browser smoke checks
-- 8 controlled report-package checks
+FOCUSED VALIDATION
+288 of 288 assertions passed across nine suites.
 
-FINAL-ISSUE GOVERNANCE
-PASS — persistent report revisions
-PASS — review and approval lifecycle
-PASS — atomic Final Issue transaction
-PASS — SHA-256 issue seal
-PASS — immutable issued snapshot
-PASS — live-project divergence warning
-PASS — new revision linked to prior issue
-PASS — controlled report package with explicitly selected evidence only
+The representative Letter report contains 14 nonblank pages. Page 2 begins with Executive Summary, and every page displays the correct Page X of 14 numbering.
+
+ENVIRONMENT BOUNDARY
+The managed Chromium host blocks all ordinary browser origins and disables Indexed Database, camera, microphone, video, and native printing through enterprise policy. The complete inherited secure-origin matrix could not be rerun against this exact build here and is not represented as passed.
 
 REMAINING BEFORE VERSION 1.0
-- Run the full inherited browser suite on an unrestricted secure local origin.
-- Complete Firefox, Safari, and WebKit acceptance.
-- Complete physical phone, tablet, laptop, camera, microphone, and codec acceptance.
-- Complete storage exhaustion, interrupted operation, and corrupt-package recovery drills.
-- Complete keyboard-only and screen-reader review.
-- Complete large-project and large-evidence performance profiling.
-- Obtain independent cryptographic and security review.
-- Perform visual issue review of representative final Portable Document Format reports.
+- Full inherited suite on an unrestricted secure local origin
+- Firefox, Safari, and WebKit acceptance
+- Physical phone, tablet, laptop, camera, microphone, codec, and permission testing
+- Storage exhaustion, interrupted operation, corrupt package, and recovery drills
+- Keyboard-only and screen-reader acceptance
+- Large evidence and representative target-hardware performance trials
+- Independent cryptographic, privacy, and application-security review
+- Visual issue review of representative final client PDFs
 
-The managed validation host blocks all ordinary browser origins and disables Indexed Database, capture, and printing through enterprise Chromium policy. Those tests are included but were not represented as passed for this exact release.
+The earlier Version 0.14.0 and Version 0.15.0-rc.1 archives are superseded by this release candidate.

@@ -1,0 +1,113 @@
+{
+  "suite": "SENTINEL Release Candidate 2 accessibility, performance, and PDF acceptance",
+  "started": "2026-08-25T05:13:46.785399+00:00",
+  "assertions": [
+    {
+      "name": "Release identity and row limit",
+      "passed": true,
+      "detail": "{'version': '0.15.0-rc.2', 'schema': 14, 'rowLimit': 500}"
+    },
+    {
+      "name": "Visible form controls have accessible names",
+      "passed": true,
+      "detail": "{}"
+    },
+    {
+      "name": "Search opens as an accessible focused dialog",
+      "passed": true,
+      "detail": "{'open': True, 'hidden': 'false', 'active': 'searchInput', 'role': 'dialog'}"
+    },
+    {
+      "name": "Search focus remains contained",
+      "passed": true,
+      "detail": "searchInput"
+    },
+    {
+      "name": "Search closes and restores focus",
+      "passed": true,
+      "detail": "{'open': False, 'hidden': 'true', 'active': 'globalSearchBtn'}"
+    },
+    {
+      "name": "Record modal opens",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forward Tab wraps inside the modal",
+      "passed": true,
+      "detail": "modalClose"
+    },
+    {
+      "name": "Reverse Tab wraps inside the modal",
+      "passed": true,
+      "detail": "modalSave"
+    },
+    {
+      "name": "Closing the modal restores trigger focus",
+      "passed": true,
+      "detail": "dashQuickTest"
+    },
+    {
+      "name": "Large register retains all records",
+      "passed": true,
+      "detail": "600"
+    },
+    {
+      "name": "Large register renders the first 500 rows",
+      "passed": true,
+      "detail": "500"
+    },
+    {
+      "name": "Large register clearly discloses the limit",
+      "passed": true,
+      "detail": "Showing the first 500 of 600 matching records. Refine filters or use an export for the complete register."
+    },
+    {
+      "name": "Large-project profile activates above 5,000 records",
+      "passed": true,
+      "detail": "{'total': 5002, 'mapRecords': 0, 'counts': {'sites': 1, 'controls': 0, 'tests': 0, 'events': 0, 'observations': 0, 'evidence': 0, 'findings': 0, 'positiveObservations': 0, 'interactions': 0, 'notes': 5001, 'assumptions': 0, 'issues': 0, 'questions': 0, 'remediationSubmissions': 0, 'retests': 0, 'baselines': 0, 'baselineComparisons': 0, 'controlChains': 0}, 'large': True, 'rowLimit': 500, 'threshold': 5000}"
+    },
+    {
+      "name": "Representative Letter report has multiple pages",
+      "passed": true,
+      "detail": "14"
+    },
+    {
+      "name": "Letter report page 2 is not blank",
+      "passed": true,
+      "detail": "CONTROLLED \u2014 VALIDATION\nSENTINEL \u00b7 Authorized Physical Security Assessment \u00b7 Revision A \u00b7 Page 2 of 14\nExecutive Summary\nThis authorized assessment evaluated the effectiveness of physical security controls and documented defensible\nremediation priorities.\nScope & Authorization\nThe assessment covered the authorized Validation Site and excluded all areas not explicitly listed in the Rules of\nEngagement.\nEngagement status\nCOMPLETE\nAuthorization reference\nVAL-AUTH-001\nAuthorization authority\nValidat"
+    },
+    {
+      "name": "Executive Summary begins on page 2",
+      "passed": true,
+      "detail": "CONTROLLED \u2014 VALIDATION\nSENTINEL \u00b7 Authorized Physical Security Assessment \u00b7 Revision A \u00b7 Page 2 of 14\nExecutive Summary\nThis authorized assessment evaluated the effectiveness of physical security controls and documented defensible\nremediation priorities.\nScope & Authorization\nThe assessment covered the authorized Validation Site and excluded all areas not explicitly listed in the Rules of\nEngagement.\nEngagement status\nCOMPLETE\nAuthorization reference\nVAL-AUTH-001\nAuthorization authority\nValidation Authorization Authority\nAuthorized facilities\nValidation Site\nAuthorized areas\nPublic lobby and authorized test zone\nExcluded areas\nAll other areas\nAllowed hours\n0800\u20131700\nStop-work conditions\nAny safety concern, emergency, or client stop request.\nMethodology\nTesting followed the approved scope and Rules of Engagement. Conclusions are traceable to documented tests,\nobservations, and preserved evidence.\nSite Overview\nThe Validation Site represents the authorized physical environment used to v"
+    },
+    {
+      "name": "Report PDF contains no Page 0 footer",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Report PDF uses Page X of Y numbering",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Report PDF has no accidental blank pages",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "No uncaught browser exceptions",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "No material console errors",
+      "passed": true,
+      "detail": "[]"
+    }
+  ],
+  "completed": "2026-08-25T05:13:54.476448+00:00",
+  "passed": true
+}

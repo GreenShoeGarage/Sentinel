@@ -123,7 +123,7 @@ def run() -> None:
         identity = page.evaluate(
             "()=>({version:window.__SENTINEL_TEST__.appVersion,schema:window.__SENTINEL_TEST__.schemaVersion})"
         )
-        record("Release identity is reconciled", identity == {"version": "0.15.0-rc.1", "schema": 14}, identity)
+        record("Release identity is reconciled", identity == {"version": "0.15.0-rc.2", "schema": 14}, identity)
 
         page.evaluate(
             """payload=>{
@@ -330,12 +330,14 @@ def run() -> None:
         record("Standalone report avoids desktop horizontal overflow", output_dims["scroll"] <= output_dims["client"] + 4 and output_dims["sections"] >= 8, output_dims)
         output_page.emulate_media(media="print")
         print_state = output_page.evaluate("""()=>({
-          header:getComputedStyle(document.querySelector('.report-running-header')).display,
-          footer:getComputedStyle(document.querySelector('.report-running-footer')).display,
+          legacyHeader:getComputedStyle(document.querySelector('.report-running-header')).display,
+          legacyFooter:getComputedStyle(document.querySelector('.report-running-footer')).display,
           pageBreaks:document.querySelectorAll('.report-page-break').length,
-          coverMinHeight:getComputedStyle(document.querySelector('.report-cover')).minHeight
+          coverMinHeight:getComputedStyle(document.querySelector('.report-cover')).minHeight,
+          pagedHeader:[...document.querySelectorAll('style')].some(s=>s.textContent.includes('@top-center')),
+          pagedFooter:[...document.querySelectorAll('style')].some(s=>s.textContent.includes('@bottom-center')&&s.textContent.includes('counter(pages)'))
         })""")
-        record("Print-media controls activate", print_state["header"] != "none" and print_state["footer"] != "none" and print_state["pageBreaks"] >= 1, print_state)
+        record("Paged-media print controls activate", print_state["legacyHeader"] == "none" and print_state["legacyFooter"] == "none" and print_state["pagedHeader"] and print_state["pagedFooter"] and print_state["pageBreaks"] >= 1, print_state)
         output_page.screenshot(path=str(OUT / "report_output_print_media.png"), full_page=True)
         output_page.close()
 

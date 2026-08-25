@@ -1,6 +1,6 @@
 {
   "suite": "Report governance semantic source checks",
-  "timestamp": "2026-08-25T00:13:25.818958+00:00",
+  "timestamp": "2026-08-25T05:12:49.467734+00:00",
   "passed": true,
   "assertions": [
     {
@@ -219,5 +219,5 @@
       "detail": ""
     }
   ],
-  "source_sha256": "4d9ac6c676427c619999a870a24a129175d095edaa48974c48a149bd3177b333"
+  "source_sha256": "8f71829c363c2c91635ba3eca4ac33692a4b38c5016d09613790c015fe96ecec"
 }

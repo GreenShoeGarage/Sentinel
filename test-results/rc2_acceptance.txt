@@ -1,0 +1,63 @@
+PASS 21/21
+PASS Release identity and row limit: {'version': '0.15.0-rc.2', 'schema': 14, 'rowLimit': 500}
+PASS Visible form controls have accessible names: {}
+PASS Search opens as an accessible focused dialog: {'open': True, 'hidden': 'false', 'active': 'searchInput', 'role': 'dialog'}
+PASS Search focus remains contained: searchInput
+PASS Search closes and restores focus: {'open': False, 'hidden': 'true', 'active': 'globalSearchBtn'}
+PASS Record modal opens: 
+PASS Forward Tab wraps inside the modal: modalClose
+PASS Reverse Tab wraps inside the modal: modalSave
+PASS Closing the modal restores trigger focus: dashQuickTest
+PASS Large register retains all records: 600
+PASS Large register renders the first 500 rows: 500
+PASS Large register clearly discloses the limit: Showing the first 500 of 600 matching records. Refine filters or use an export for the complete register.
+PASS Large-project profile activates above 5,000 records: {'total': 5002, 'mapRecords': 0, 'counts': {'sites': 1, 'controls': 0, 'tests': 0, 'events': 0, 'observations': 0, 'evidence': 0, 'findings': 0, 'positiveObservations': 0, 'interactions': 0, 'notes': 5001, 'assumptions': 0, 'issues': 0, 'questions': 0, 'remediationSubmissions': 0, 'retests': 0, 'baselines': 0, 'baselineComparisons': 0, 'controlChains': 0}, 'large': True, 'rowLimit': 500, 'threshold': 5000}
+PASS Representative Letter report has multiple pages: 14
+PASS Letter report page 2 is not blank: CONTROLLED — VALIDATION
+SENTINEL · Authorized Physical Security Assessment · Revision A · Page 2 of 14
+Executive Summary
+This authorized assessment evaluated the effectiveness of physical security controls and documented defensible
+remediation priorities.
+Scope & Authorization
+The assessment covered the authorized Validation Site and excluded all areas not explicitly listed in the Rules of
+Engagement.
+Engagement status
+COMPLETE
+Authorization reference
+VAL-AUTH-001
+Authorization authority
+Validat
+PASS Executive Summary begins on page 2: CONTROLLED — VALIDATION
+SENTINEL · Authorized Physical Security Assessment · Revision A · Page 2 of 14
+Executive Summary
+This authorized assessment evaluated the effectiveness of physical security controls and documented defensible
+remediation priorities.
+Scope & Authorization
+The assessment covered the authorized Validation Site and excluded all areas not explicitly listed in the Rules of
+Engagement.
+Engagement status
+COMPLETE
+Authorization reference
+VAL-AUTH-001
+Authorization authority
+Validation Authorization Authority
+Authorized facilities
+Validation Site
+Authorized areas
+Public lobby and authorized test zone
+Excluded areas
+All other areas
+Allowed hours
+0800–1700
+Stop-work conditions
+Any safety concern, emergency, or client stop request.
+Methodology
+Testing followed the approved scope and Rules of Engagement. Conclusions are traceable to documented tests,
+observations, and preserved evidence.
+Site Overview
+The Validation Site represents the authorized physical environment used to v
+PASS Report PDF contains no Page 0 footer: []
+PASS Report PDF uses Page X of Y numbering: []
+PASS Report PDF has no accidental blank pages: []
+PASS No uncaught browser exceptions: []
+PASS No material console errors: []

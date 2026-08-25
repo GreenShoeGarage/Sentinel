@@ -1,6 +1,6 @@
 {
   "suite": "SENTINEL release-candidate browser smoke",
-  "started": "2026-08-25T00:13:38.959718+00:00",
+  "started": "2026-08-25T05:13:22.217757+00:00",
   "assertions": [
     {
       "name": "Application title",
@@ -12,7 +12,7 @@
       "name": "Release identity",
       "passed": true,
       "advisory": false,
-      "detail": "{'version': '0.15.0-rc.1', 'schema': 14}"
+      "detail": "{'version': '0.15.0-rc.2', 'schema': 14}"
     },
     {
       "name": "Blank Schema 14 project audits clean",
@@ -78,7 +78,7 @@
       "name": "Desktop sidebar collapse preserves workspace width",
       "passed": true,
       "advisory": false,
-      "detail": "{'before': {'x': 237, 'y': 90.1875, 'width': 1203, 'height': 878.875}, 'after': {'x': 42.09375, 'y': 90.1875, 'width': 1397.90625, 'height': 878.875}}"
+      "detail": "{'before': {'x': 237, 'y': 90.1875, 'width': 1203, 'height': 878.875}, 'after': {'x': 3.890625, 'y': 90.1875, 'width': 1436.109375, 'height': 878.875}}"
     },
     {
       "name": "Professional Report Builder 2.0 renders in full application",
@@ -138,9 +138,9 @@
       "name": "Opaque-origin storage notes documented",
       "passed": true,
       "advisory": true,
-      "detail": "[\"SecurityError: Failed to execute 'open' on 'IDBFactory': access to the Indexed Database API is denied in this context.\\n    at <anonymous>:698:83\\n    at new Promise (<anonymous>)\\n    at openDB (<anonymous>:698:32)\\n    at initializeStorage (<anonymous>:788:12)\\n    at <anonymous>:1520:1\\n    at <anonymous>:1522:3\", 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:826:403', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:826:403']"
+      "detail": "[\"SecurityError: Failed to execute 'open' on 'IDBFactory': access to the Indexed Database API is denied in this context.\\n    at <anonymous>:698:83\\n    at new Promise (<anonymous>)\\n    at openDB (<anonymous>:698:32)\\n    at initializeStorage (<anonymous>:788:12)\\n    at <anonymous>:1526:1\\n    at <anonymous>:1528:3\", 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:799:52', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:826:403', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:826:403']"
     }
   ],
-  "completed": "2026-08-25T00:13:43.373351+00:00",
+  "completed": "2026-08-25T05:13:31.433673+00:00",
   "passed": true
 }

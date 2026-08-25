@@ -25,7 +25,7 @@ class P(HTMLParser):
 p=P(); p.feed(text)
 dups=sorted({x for x in p.ids if p.ids.count(x)>1})
 chk('Application source exists',htmlp.exists(),htmlp.stat().st_size)
-chk('Application identifies Version 0.15.0-rc.1','0.15.0-rc.1' in text)
+chk('Application identifies Version 0.15.0-rc.2','0.15.0-rc.2' in text)
 chk('Application identifies Project Schema 14',bool(re.search(r'(?:schemaVersion|SCHEMA_VERSION|PROJECT_SCHEMA|Schema)[^\n<]{0,80}\b14\b',text,re.I)))
 chk('No duplicate static element identifiers',not dups,dups[:50])
 chk('No remote script or stylesheet dependencies',not p.remotes,p.remotes[:30])

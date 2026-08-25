@@ -1,13 +1,18 @@
-SENTINEL 0.15.0-rc.1 — Professional Report Builder 2.0 Release Candidate
+SENTINEL 0.15.0-rc.2 — Controlled Operational Acceptance Candidate
 
-Open index.html in a current browser.
+Open index.html through a local static server:
 
-For reliable Indexed Database, encrypted storage, media capture, package import/export, and recovery behavior, serve the release from localhost or a static Hypertext Transfer Protocol Secure host instead of relying on a file:// address.
+  python -m http.server 8080
+
+Then browse to:
+
+  http://127.0.0.1:8080/index.html
 
 Read:
-- README.md for application and release guidance
+- README.md for the application overview and release guidance
 - REPORT_BUILDER_GUIDE.md for the governed reporting workflow
-- VALIDATION.md for the exact validation record and environment boundaries
+- VALIDATION.md for the exact focused validation record and environment boundaries
+- FINAL_ACCEPTANCE_CHECKLIST.md for the remaining Version 1.0 gates
 - RELEASE_STATUS.txt for the release decision
 
-The earlier package labeled Version 0.14.0 is superseded by this reconciled release candidate.
+Version 0.15.0-rc.2 supersedes the earlier Version 0.14.0 and Version 0.15.0-rc.1 packages.

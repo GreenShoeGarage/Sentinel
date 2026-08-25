@@ -1,0 +1,6 @@
+PDF: /mnt/data/sentinel_rc2_work/app/test-results/rc2_representative_letter_report.pdf
+Pages: 14
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

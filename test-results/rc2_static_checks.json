@@ -1,0 +1,127 @@
+{
+  "suite": "SENTINEL Release Candidate 2 static acceptance",
+  "passed": true,
+  "assertionCount": 24,
+  "assertions": [
+    {
+      "name": "Release Candidate 2 identity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Schema remains 14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Legacy 245 mm report cover removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Letter-safe report cover is present",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "Print headings avoid orphaning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Print table headings repeat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Print paragraphs have widow and orphan controls",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Paged-media headers use margin boxes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Paged-media footers include Page X of Y counters",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Legacy fixed-footer Page 0 counter is removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Search is an accessible modal dialog",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Search has hidden-state semantics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Search results use listbox semantics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reduced-motion preference is honored",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Checkboxes and radios have usable dimensions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile checkbox targets reach 44 pixels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Generic select helper associates labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Modal focus helper exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Search close restores focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Interactive row limit is explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Large project threshold is explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Large project profile is exposed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Register guardrail is user-visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Known filter controls have accessible names",
+      "passed": true,
+      "detail": "[]"
+    }
+  ]
+}

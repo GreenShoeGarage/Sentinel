@@ -1,13 +1,12 @@
 {
   "application": "SENTINEL",
-  "version": "0.15.0-rc.1",
-  "projectSchema": 14,
-  "releaseType": "Release Candidate",
-  "generatedAt": "2026-08-25T00:14:31.975451+00:00",
+  "version": "0.15.0-rc.2",
+  "schemaVersion": 14,
+  "generatedAt": "2026-08-25T05:14:53.271235+00:00",
   "releaseCandidateReady": true,
   "version1Ready": false,
-  "executedAssertionTotal": 243,
-  "suites": [
+  "focusedAssertionTotal": 288,
+  "focusedSuites": [
     {
       "name": "Full-application static validation",
       "assertions": 31,
@@ -49,10 +48,42 @@
       "assertions": 8,
       "passed": true,
       "artifact": "test-results/report_package_inspection.json"
+    },
+    {
+      "name": "Release Candidate 2 static hardening checks",
+      "assertions": 24,
+      "passed": true,
+      "artifact": "test-results/rc2_static_checks.json"
+    },
+    {
+      "name": "Release Candidate 2 accessibility, scale, and PDF acceptance",
+      "assertions": 21,
+      "passed": true,
+      "artifact": "test-results/rc2_acceptance.json"
     }
   ],
-  "sourceSha256": "4d9ac6c676427c619999a870a24a129175d095edaa48974c48a149bd3177b333",
-  "supersedes": "SENTINEL_v0.14.0.zip (mislabeled Version 0.13.5 / Schema 13 application)",
+  "sourceSha256": "8f71829c363c2c91635ba3eca4ac33692a4b38c5016d09613790c015fe96ecec",
+  "supersedes": [
+    "SENTINEL_v0.14.0.zip",
+    "SENTINEL_v0.15.0-rc.1.zip"
+  ],
+  "pdfAcceptance": {
+    "artifact": "test-results/rc2_representative_letter_report.pdf",
+    "paper": "Letter",
+    "pages": 14,
+    "page2ContainsExecutiveSummary": true,
+    "blankPages": [],
+    "numbering": "Page 1 of 14 through Page 14 of 14",
+    "contactSheet": "test-results/rc2_representative_letter_report_contact_sheet.jpg"
+  },
+  "performanceGuardrails": {
+    "interactiveRowLimit": 500,
+    "largeProjectRecordThreshold": 5000,
+    "dataTruncated": false,
+    "exportsAndReportsUseCompleteModel": true,
+    "synthetic600RecordRegisterRetained": 600,
+    "synthetic600RecordRowsRendered": 500
+  },
   "environmentBoundary": {
     "browser": "Chromium 144.0.7559.96",
     "managedUrlBlocklist": [
@@ -62,16 +93,18 @@
     "indexedDbOnFocusedBrowserFixture": false,
     "nativeWebCryptoOnFocusedBrowserFixture": false,
     "testOnlyDigestBridgeUsed": true,
+    "playwrightPdfAvailable": true,
     "fullInheritedSecureOriginMatrixExecuted": false
   },
   "remainingBeforeVersion1": [
     "Full inherited suite on an unrestricted secure local origin",
     "Firefox, Safari, and WebKit acceptance",
-    "Physical-device media-capture acceptance",
+    "Physical-device media-capture and permission acceptance",
     "Storage and recovery fault injection",
-    "Keyboard-only and screen-reader review",
-    "Large-project and large-evidence performance profiling",
-    "Independent cryptographic and security review",
+    "Keyboard-only and screen-reader acceptance",
+    "Large evidence and target-hardware performance trials",
+    "Independent cryptographic, privacy, and application-security review",
     "Representative final PDF visual issue review"
-  ]
+  ],
+  "focusedMatrixArtifact": "test-results/rc2_final_matrix_summary.json"
 }

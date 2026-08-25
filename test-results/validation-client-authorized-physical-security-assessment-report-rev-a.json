@@ -1,17 +1,17 @@
 {
   "format": "SENTINEL_REPORT",
   "formatVersion": 2,
-  "generatedAt": "2026-08-25T00:13:36.179Z",
+  "generatedAt": "2026-08-25T05:12:59.680Z",
   "application": "SENTINEL",
-  "appVersion": "0.15.0-rc.1",
+  "appVersion": "0.15.0-rc.2",
   "schemaVersion": 14,
   "reportArtifact": {
-    "id": "id-1787616813501-7tqdq7znr0y",
+    "id": "id-1787634775256-a2xgzlw2cyq",
     "code": "REPORT-001",
-    "activeRevisionId": "id-1787616813501-h2u8puse9j"
+    "activeRevisionId": "id-1787634775256-spkcazmh39"
   },
   "revision": {
-    "id": "id-1787616813501-h2u8puse9j",
+    "id": "id-1787634775256-spkcazmh39",
     "code": "RPT-001",
     "revision": "A",
     "status": "FINAL_ISSUE",
@@ -32,7 +32,7 @@
     },
     "preparedBy": "Validation Analyst",
     "preparedRole": "Assessment Lead",
-    "preparedAt": "2026-08-25T00:13:35.531Z",
+    "preparedAt": "2026-08-25T05:12:58.619Z",
     "executiveSummary": "This authorized assessment evaluated the effectiveness of physical security controls and documented defensible remediation priorities.",
     "methodology": "Testing followed the approved scope and Rules of Engagement. Conclusions are traceable to documented tests, observations, and preserved evidence.",
     "siteOverview": "The Validation Site represents the authorized physical environment used to verify report-governance workflows.",
@@ -56,7 +56,7 @@
       "limitations",
       "conclusion",
       "approval",
-      "custom:id-1787616813883-5rvg30o8rkx",
+      "custom:id-1787634775845-t0jg9qxrqte",
       "appendices"
     ],
     "sectionVisibility": {
@@ -77,21 +77,21 @@
       "conclusion": true,
       "approval": true,
       "appendices": true,
-      "custom:id-1787616813883-5rvg30o8rkx": true
+      "custom:id-1787634775845-t0jg9qxrqte": true
     },
     "customSections": [
       {
-        "id": "id-1787616813883-5rvg30o8rkx",
+        "id": "id-1787634775845-t0jg9qxrqte",
         "title": "Management Response",
         "body": "Management responses may be recorded here without modifying the validated finding record.",
         "included": true,
-        "createdAt": "2026-08-25T00:13:33.883Z",
-        "updatedAt": "2026-08-25T00:13:33.947Z"
+        "createdAt": "2026-08-25T05:12:55.845Z",
+        "updatedAt": "2026-08-25T05:12:56.003Z"
       }
     ],
     "evidenceSelection": [
       {
-        "id": "id-1787616814511-a1spvef0bfg",
+        "id": "id-1787634776771-9ffqcd05bb9",
         "evidenceId": "report-evidence-selected",
         "sectionKey": "executiveSummary",
         "findingId": "",
@@ -120,45 +120,45 @@
     "includeDraftRecords": false,
     "review": {
       "requestedBy": "Validation Assessment Lead",
-      "requestedAt": "2026-08-25T00:13:35.030Z",
+      "requestedAt": "2026-08-25T05:12:57.782Z",
       "reviewer": "Independent Reviewer",
       "reviewerRole": "Security Reviewer",
       "decision": "APPROVED",
-      "reviewedAt": "2026-08-25T00:13:35.279Z",
+      "reviewedAt": "2026-08-25T05:12:58.243Z",
       "rationale": "Narrative, appendices, output controls, and evidence boundaries were reviewed."
     },
     "approval": {
       "approvedBy": "Approval Authority",
       "approverRole": "Director of Security",
-      "approvedAt": "2026-08-25T00:13:35.279Z",
+      "approvedAt": "2026-08-25T05:12:58.243Z",
       "rationale": "Approved for controlled Final Issue after independent review."
     },
     "issue": {
       "issuedBy": "Issuing Authority",
-      "issuedAt": "2026-08-25T00:13:35.531Z",
+      "issuedAt": "2026-08-25T05:12:58.619Z",
       "note": "Final Issue created after independent review and output verification.",
       "issueNumber": "VAL-ISSUE-001",
       "distribution": "Controlled distribution to the client sponsor and named security officials."
     },
     "sourceRevisionId": "",
     "issuedSnapshot": null,
-    "materialProjectFingerprint": "fp-f161469587f3e9ab000010d5",
-    "reviewFingerprint": "fp-0b5c880616a5c05100000e8a",
-    "approvalFingerprint": "fp-bdddf530f7cb8ff70000112a",
-    "issueFingerprint": "93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770",
-    "issueMaterialFingerprint": "fp-42d6a08a995ff4ad00003f63",
+    "materialProjectFingerprint": "fp-6d70658b48ec3eef000010d4",
+    "reviewFingerprint": "fp-a197adfd201bc02c00000e8a",
+    "approvalFingerprint": "fp-1856cc979b490a600000112a",
+    "issueFingerprint": "30dd8e4d24c8f9ecc590853b1ac8f6de614b2c7ed68b63150aac66d314bf1ab4",
+    "issueMaterialFingerprint": "fp-29cbf90af96db04200003f61",
     "lifecycleHistory": [
       {
-        "id": "id-1787616813501-9bs7r3l123b",
-        "at": "2026-08-25T00:13:33.501Z",
+        "id": "id-1787634775256-lckk1k46y9",
+        "at": "2026-08-25T05:12:55.256Z",
         "by": "Validation Assessment Lead",
         "from": "",
         "to": "DRAFT",
         "note": "Initial report revision created."
       },
       {
-        "id": "id-1787616815031-j5hqnq1yye",
-        "at": "2026-08-25T00:13:35.031Z",
+        "id": "id-1787634777783-30uxljtd6fp",
+        "at": "2026-08-25T05:12:57.783Z",
         "by": "Validation Assessment Lead",
         "from": "DRAFT",
         "to": "IN_REVIEW",
@@ -166,8 +166,8 @@
         "details": null
       },
       {
-        "id": "id-1787616815279-qgmmw5qj43",
-        "at": "2026-08-25T00:13:35.279Z",
+        "id": "id-1787634778243-borforw9uki",
+        "at": "2026-08-25T05:12:58.243Z",
         "by": "Approval Authority",
         "from": "IN_REVIEW",
         "to": "APPROVED",
@@ -175,8 +175,8 @@
         "details": null
       },
       {
-        "id": "id-1787616815681-prkswgpey7j",
-        "at": "2026-08-25T00:13:35.681Z",
+        "id": "id-1787634779002-ukp7wa13me",
+        "at": "2026-08-25T05:12:59.002Z",
         "by": "Issuing Authority",
         "from": "APPROVED",
         "to": "FINAL_ISSUE",
@@ -184,27 +184,27 @@
         "details": {
           "review": {
             "requestedBy": "Validation Assessment Lead",
-            "requestedAt": "2026-08-25T00:13:35.030Z",
+            "requestedAt": "2026-08-25T05:12:57.782Z",
             "reviewer": "Independent Reviewer",
             "reviewerRole": "Security Reviewer",
             "decision": "APPROVED",
-            "reviewedAt": "2026-08-25T00:13:35.279Z",
+            "reviewedAt": "2026-08-25T05:12:58.243Z",
             "rationale": "Narrative, appendices, output controls, and evidence boundaries were reviewed."
           },
           "approval": {
             "approvedBy": "Approval Authority",
             "approverRole": "Director of Security",
-            "approvedAt": "2026-08-25T00:13:35.279Z",
+            "approvedAt": "2026-08-25T05:12:58.243Z",
             "rationale": "Approved for controlled Final Issue after independent review."
           },
           "issue": {
             "issuedBy": "Issuing Authority",
-            "issuedAt": "2026-08-25T00:13:35.531Z",
+            "issuedAt": "2026-08-25T05:12:58.619Z",
             "note": "Final Issue created after independent review and output verification.",
             "issueNumber": "VAL-ISSUE-001",
             "distribution": "Controlled distribution to the client sponsor and named security officials."
           },
-          "issueFingerprint": "93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770"
+          "issueFingerprint": "30dd8e4d24c8f9ecc590853b1ac8f6de614b2c7ed68b63150aac66d314bf1ab4"
         }
       }
     ]
@@ -259,15 +259,15 @@
       "samplingLimitations": "Results apply only to the authorized scope, time, and evidence available during testing.",
       "scopeNotes": "",
       "signOff": {
-        "fingerprint": "e40cdd3242dca85b0000160f",
-        "id": "id-1787616813500-mxh7ilubvqe",
+        "fingerprint": "ca2397176a39c0540000160f",
+        "id": "id-1787634775254-89e3og8999",
         "note": "Validation sign-off.",
         "revocationNote": "",
         "revokedAt": "",
         "revokedBy": "",
         "role": "Assessment Lead",
         "sha256": "",
-        "signedAt": "2026-08-25T00:13:33.500Z",
+        "signedAt": "2026-08-25T05:12:55.254Z",
         "signedBy": "Validation Assessment Lead",
         "statement": "Assessment coverage and limitations reviewed.",
         "status": "SIGNED"
@@ -278,7 +278,7 @@
       {
         "code": "ORG-01",
         "description": "",
-        "id": "id-1787616813500-bne6y1fkxgp",
+        "id": "id-1787634775254-hch54cb9x0o",
         "name": "Organization",
         "parentId": "",
         "type": "ORGANIZATION"
@@ -360,7 +360,7 @@
   "selectedEvidence": [
     {
       "selection": {
-        "id": "id-1787616814511-a1spvef0bfg",
+        "id": "id-1787634776771-9ffqcd05bb9",
         "evidenceId": "report-evidence-selected",
         "sectionKey": "executiveSummary",
         "findingId": "",
@@ -377,8 +377,8 @@
         "designation": "ORIGINAL",
         "collector": "Validation Analyst",
         "location": "Validation Site",
-        "createdAt": "2026-08-25T00:13:33.524Z",
-        "importedAt": "2026-08-25T00:13:33.524Z",
+        "createdAt": "2026-08-25T05:12:55.343Z",
+        "importedAt": "2026-08-25T05:12:55.343Z",
         "verificationHistory": [],
         "custody": [],
         "transformations": [],
@@ -387,13 +387,13 @@
           "report-validation"
         ],
         "acquisition": {
-          "acquiredAt": "2026-08-25T00:13:33.524Z",
+          "acquiredAt": "2026-08-25T05:12:55.343Z",
           "sourceDevice": "Validation fixture",
           "sourceDescription": "Report-package boundary test",
           "originalFilename": "selected-report-evidence.png",
           "originalMimeType": "image/png",
           "originalSize": 4991,
-          "originalLastModified": "2026-08-25T00:13:33.524Z"
+          "originalLastModified": "2026-08-25T05:12:55.343Z"
         },
         "archived": false,
         "id": "report-evidence-selected",
@@ -423,7 +423,7 @@
         "originalEvidenceId": "",
         "parentEvidenceId": "",
         "derivationNote": "",
-        "updatedAt": "2026-08-25T00:13:33.524Z",
+        "updatedAt": "2026-08-25T05:12:55.343Z",
         "embeddedMetadata": {},
         "binaryLocked": true,
         "lastVerifiedAt": "",

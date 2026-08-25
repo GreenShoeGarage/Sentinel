@@ -1,8 +1,8 @@
 # SENTINEL — Physical Security Red Team Workbench
 
-**Release:** Version 0.15.0 Release Candidate 1  
+**Release:** Version 0.15.0 Release Candidate 2  
 **Project schema:** 14  
-**Release date:** August 24, 2026  
+**Release date:** August 25, 2026  
 **Architecture:** Local-first, no-compile browser application
 
 SENTINEL is a field instrument for planning, conducting, documenting, analyzing, and reporting **authorized physical security red team assessments**. It combines a field notebook, test director, evidence workstation, findings register, remediation and retest system, baseline comparator, traceability environment, and governed professional report builder.
@@ -16,26 +16,34 @@ SENTINEL is designed to document authorized assessment work. It does not provide
 ## Start SENTINEL
 
 1. Extract the release archive.
-2. Open `index.html` in a current browser.
-3. For dependable Indexed Database (IndexedDB), encryption, camera, microphone, video, and package behavior, serve the release from `localhost` or a static Hypertext Transfer Protocol Secure (HTTPS) host rather than relying on a `file://` address.
+2. From the extracted directory, start a local static server:
+
+   ```bash
+   python -m http.server 8080
+   ```
+
+3. Open `http://127.0.0.1:8080/index.html` in a current browser.
 4. Create a new project or import a SENTINEL project package.
-5. Complete the Authorization and Rules of Engagement Register before beginning operational testing.
+5. Complete the Authorization and Rules of Engagement Register before operational testing.
 
-A simple local server can be started from the release directory with:
-
-```bash
-python -m http.server 8080
-```
-
-Then open `http://127.0.0.1:8080/index.html` in the browser.
+Opening `index.html` directly through a `file://` address is suitable only for basic review. A local Hypertext Transfer Protocol (HTTP) origin or static Hypertext Transfer Protocol Secure (HTTPS) host is strongly recommended for dependable Indexed Database (IndexedDB), encryption, media capture, package, recovery, and storage behavior.
 
 ## Release-candidate status
 
-Version 0.15.0 Release Candidate 1 is the first package in this development line that contains the **actual Project Schema 14 Professional Report Builder 2.0 implementation**.
+Version 0.15.0 Release Candidate 2 is the operational hardening successor to Release Candidate 1. It retains the complete Professional Report Builder 2.0 and corrects issues found during final acceptance work:
 
-The previously distributed file labeled `SENTINEL_v0.14.0.zip` is superseded. During the final review, its application source was found to still identify itself as Version 0.13.5 / Project Schema 13, and its validation record showed that most Report Builder 2.0 gates had not passed. Do not use that package as the canonical reporting release.
+- Letter-size report pagination no longer produces a blank second page.
+- Printed reports use paged-media headers and reliable **Page X of Y** numbering instead of the former fixed-footer `Page 0` result.
+- Report revision creation regenerates nested custom-section and evidence-selection identifiers, eliminating duplicate Universally Unique Identifier (UUID) collisions while preserving visible report content and revision provenance.
+- Search and modal dialogs now contain keyboard focus and restore focus to the initiating control.
+- Form filters and generated select fields have programmatic labels.
+- Mobile checkbox and radio targets meet a 44-pixel interaction target, and reduced-motion preferences are honored.
+- Large interactive registers render the first 500 matching rows with a clear disclosure while preserving the complete underlying records for exports and reports.
+- Projects above 5,000 material records display a large-project warning instead of silently presenting a potentially unresponsive all-at-once workspace.
 
-This release candidate corrects that mismatch and provides reconciled source, documentation, tests, validation records, version labels, schema labels, and manifest hashes.
+This build is suitable for **controlled operational acceptance**. It is not yet Version 1.0 because unrestricted secure-origin, cross-browser, physical-device, fault-injection, assistive-technology, and independent security acceptance remain open.
+
+The earlier package labeled `SENTINEL_v0.14.0.zip` is superseded and should not be treated as the canonical Schema 14 release. Release Candidate 1 is also superseded by this hardening build.
 
 ## Professional Report Builder 2.0
 
@@ -49,14 +57,13 @@ Each report revision preserves:
 - Sensitivity marking and handling instructions
 - Client branding, logo, header, and footer controls
 - Prepared-by, reviewer, approval, and issuing-authority records
-- Ordered built-in sections
-- Analyst-created custom sections
+- Ordered built-in sections and analyst-created custom sections
 - Selected evidence, placement, captions, and display order
 - Selected full appendices
 - Review, approval, Final Issue, revision, and lifecycle histories
 - Material project fingerprint and Final Issue Secure Hash Algorithm 256-bit (SHA-256) fingerprint
 
-Built-in sections cover the executive summary, scope and authorization, methodology, site overview, security architecture, assessment coverage, findings, positive observations, defense in depth, remediation priorities, formal retesting, baseline comparison, limitations, conclusion, approvals, and appendices.
+Built-in sections cover the Executive Summary, Scope and Authorization, Methodology, Site Overview, Security Architecture, Assessment Coverage, Findings, Positive Observations, Defense in Depth, Remediation Priorities, Formal Retesting, Baseline Comparison, Limitations, Conclusion, Approvals, and Appendices.
 
 ### Evidence boundary
 
@@ -70,7 +77,7 @@ The report lifecycle is:
 
 **DRAFT → IN REVIEW → APPROVED → FINAL ISSUE**
 
-Final Issue is an atomic transaction. SENTINEL applies issue metadata, captures the issued snapshot, calculates the SHA-256 seal, and locks the revision only after all issue gates succeed. A failed issue transaction leaves the approved revision unchanged rather than partially issued.
+Final Issue is atomic. SENTINEL applies issue metadata, captures the issued snapshot, calculates the SHA-256 seal, and locks the revision only after all issue gates succeed. A failed transaction leaves the approved revision unchanged rather than partially issued.
 
 After Final Issue:
 
@@ -93,17 +100,16 @@ The governed report artifact drives:
 - Browser print-to-Portable Document Format (PDF)
 - Controlled report-package ZIP export
 
-Every final PDF should receive a visual issue review because pagination can vary by browser, operating system, paper size, scaling, fonts, and print driver.
+Chromium-based printing now uses paged-media margin boxes for running markings and `Page X of Y` numbering. Browser implementations differ, so every final PDF still requires a visual issue review.
 
-See `REPORT_BUILDER_GUIDE.md` for the complete reporting workflow.
+See `REPORT_BUILDER_GUIDE.md` for the full reporting workflow.
 
 ## Major retained capabilities
 
 ### Authorization and field operations
 
 - Rules of Engagement Register and visible engagement state
-- Authorization-readiness gates
-- One active test at a time
+- Authorization-readiness gates and one active test at a time
 - Mobile Field Mode, timers, rapid event markers, observations, notes, interactions, and Daily Field Logs
 - Safe test completion and abort records
 - Direct photograph, video, and audio capture where browser policy permits
@@ -112,7 +118,7 @@ See `REPORT_BUILDER_GUIDE.md` for the complete reporting workflow.
 ### Site model and mapping
 
 - Organization → Site → Building → Floor → Zone → Asset hierarchy
-- Stable Universally Unique Identifiers (UUIDs) and human-readable record identifiers
+- Stable UUIDs and human-readable record identifiers
 - Multiple site and floor plans
 - Markers, zones, paths, layers, filters, scale calibration, measurements, and coverage overlays
 - Relationships from map objects to controls, tests, observations, findings, and Control Chains
@@ -120,10 +126,10 @@ See `REPORT_BUILDER_GUIDE.md` for the complete reporting workflow.
 ### Evidence Workstation
 
 - Binary storage separated from structured metadata
-- Secure Hash Algorithm 256-bit verification
+- SHA-256 verification
 - Immutable originals and non-destructive derived evidence
 - Image annotations, labels, measurements, crop, rotation, blur, and redaction
-- Image, text, audio, video, and Portable Document Format previews
+- Image, text, audio, video, and PDF previews
 - Provenance, verification history, custody history, metadata history, transformation history, and lineage
 - Evidence Vault and Photo Log
 
@@ -138,8 +144,7 @@ See `REPORT_BUILDER_GUIDE.md` for the complete reporting workflow.
 ### Control Chains and defense in depth
 
 - Expected-versus-observed protection paths
-- Sequence-aware comparison
-- Eight security layers
+- Sequence-aware comparison and eight security layers
 - Separate control degradation and evidence limitation analysis
 - Report-ready path and layer diagrams
 
@@ -156,8 +161,7 @@ See `REPORT_BUILDER_GUIDE.md` for the complete reporting workflow.
 
 - IndexedDB project and binary storage
 - Project Library, autosave, checkpoints, recovery, Save As Copy, and complete project packages
-- Optional workspace lock
-- Optional encrypted local project storage
+- Optional workspace lock and encrypted local project storage
 - Optional encrypted `.sentinel.enc` project packages
 - Advanced Encryption Standard in Galois/Counter Mode (AES-GCM)
 - Password-Based Key Derivation Function 2 (PBKDF2) with a user-provided passphrase
@@ -173,6 +177,14 @@ These exports serve different purposes:
 
 Do not treat a report package as a project backup. Do not distribute a complete project package merely because a client needs a report.
 
+## Large-project behavior
+
+SENTINEL retains all project records, but interactive registers intentionally render no more than the first **500 matching rows** at once. Refine filters or use an export for the complete register. The cap currently applies to the generic registers, Evidence Vault, Timeline, Coverage Matrix, and Relationship Gap Queue.
+
+A project-scale profile warns when the project contains more than **5,000 material records**. The warning does not delete, truncate, or alter project data. It identifies when filtering, staged analysis, or a smaller project partition may be necessary for responsive browser use.
+
+Reports and exports are generated from the complete project model and are not limited to the first 500 interactive rows.
+
 ## Project schema and compatibility
 
 The current project schema is **14**.
@@ -181,38 +193,42 @@ Migration is implemented from every previously published schema:
 
 **1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14**
 
-The release includes historical fixtures derived from Versions 0.1.0 through 0.13.5. All 13 fixtures migrated to Schema 14 and passed the post-migration audit in the final release-candidate matrix.
+The release includes historical fixtures derived from Versions 0.1.0 through 0.13.5. All 13 fixtures migrated to Schema 14 and passed the post-migration audit in the final focused matrix.
 
-Projects created by a newer, unsupported schema are rejected rather than guessed at or silently downgraded.
+Projects created by a newer unsupported schema are rejected rather than guessed at or silently downgraded.
 
 ## Validation summary
 
-The exact release tree passed **243 executed assertions across seven suites**:
+The exact canonical source passed **288 executed assertions across nine focused suites**:
 
 - 31 full-application static assertions
 - 50 migration and export assertions
-- 29 report static assertions
+- 29 Report Builder static implementation assertions
 - 43 report-governance semantic assertions
 - 59 Professional Report Builder browser assertions
 - 23 broad release-candidate browser smoke assertions
 - 8 controlled report-package inspection assertions
+- 24 Release Candidate 2 static hardening assertions
+- 21 Release Candidate 2 accessibility, scale, and PDF assertions
 
-These checks cover source syntax, duplicate functions and element identifiers, migration, report composition, custom-section preservation, selected-evidence boundaries, review and approval, atomic Final Issue, immutable issue snapshots, divergence, new revisions, HTML, Markdown, JSON, print styling, report-package contents and hashes, workflow navigation, desktop and mobile layout, and material browser errors.
+The final acceptance matrix covers syntax, duplicate functions and element identifiers, schema migration, report composition, custom-section preservation, nested revision identifiers, selected-evidence boundaries, review and approval, atomic Final Issue, immutable issue snapshots, divergence, new revisions, HTML, Markdown, JSON, report packages, Letter pagination, paged-media numbering, keyboard focus behavior, accessible form names, large-register disclosure, desktop and mobile layout, and material browser errors.
 
-The release also contains the inherited secure-origin test suite. The current managed validation environment blocks all ordinary browser origins and denies IndexedDB, camera, microphone, printing, and video through enterprise Chromium policy. Therefore the complete inherited secure-origin browser matrix could not be rerun against this exact release in this environment. That boundary is documented in `VALIDATION.md`; it is not represented as a pass.
+A representative Letter-size report rendered as 14 pages. Page 2 began with the Executive Summary, every page contained report content, and all pages displayed correct `Page X of 14` numbering. The rendered contact sheet and PDF are included in `test-results/`.
 
-## Operational limitations before Version 1.0
+The complete inherited secure-origin test suite also ships in the release. The current managed Chromium environment blocks all ordinary browser origins and disables IndexedDB, camera, microphone, video, and printing through enterprise policy. The inherited suite therefore could not be rerun against this exact build here. That boundary is documented in `VALIDATION.md` and is **not** represented as a pass.
 
-Version 0.15.0 Release Candidate 1 is not yet the final controlled operational release. Remaining acceptance work includes:
+## Remaining acceptance before Version 1.0
 
-- Full inherited suite on an unrestricted secure local origin
-- Firefox, Safari, and WebKit acceptance
-- Physical phone, tablet, laptop, camera, microphone, and codec testing
-- Browser quota, storage exhaustion, interrupted save/import, and corrupt-package recovery drills
-- Keyboard-only and screen-reader review
-- Large-project and large-evidence performance profiling
-- Independent cryptographic and security review
-- Visual issue review of representative final PDFs
+- Run the complete inherited matrix on an unrestricted local secure origin.
+- Complete Firefox, Safari, and WebKit acceptance.
+- Test intended phones, tablets, laptops, cameras, microphones, codecs, and permission flows.
+- Exercise browser quota, storage exhaustion, interrupted save/import, and corrupt-package/checkpoint recovery.
+- Complete keyboard-only and screen-reader acceptance with representative users and assistive technology.
+- Test large evidence binaries and representative high-record projects on target hardware.
+- Conduct an independent cryptographic, privacy, and application-security review.
+- Perform a visual issue review for every representative client report template and final issued PDF.
+
+Use `FINAL_ACCEPTANCE_CHECKLIST.md` to record these gates.
 
 Passphrases are unrecoverable. SENTINEL has no password reset, escrow service, hidden master key, or cloud recovery service.
 
@@ -223,11 +239,12 @@ Browser encryption protects local records and packages at rest, but it cannot pr
 - `index.html` — complete no-compile application
 - `README.md` — application overview and release status
 - `REPORT_BUILDER_GUIDE.md` — governed reporting workflow
+- `FINAL_ACCEPTANCE_CHECKLIST.md` — remaining Version 1.0 acceptance gates
 - `VALIDATION.md` — exact validation record and boundaries
-- `REPORT_BUILDER_IMPLEMENTATION_AUDIT.md` — implementation gate audit
+- `REPORT_BUILDER_IMPLEMENTATION_AUDIT.md` — implementation and hardening audit
 - `CHANGELOG.md` — release history
 - `RELEASE_STATUS.txt` — release-candidate decision
 - `RELEASE_VALIDATION_SUMMARY.json` — machine-readable validation summary
 - `MANIFEST.json` — file sizes and SHA-256 hashes
-- `tests/` — repeatable static, migration, browser, security, persistence, evidence, analysis, remediation, baseline, and report tests
-- `test-results/` — final focused results, screenshots, and sample governed report outputs
+- `tests/` — repeatable static, migration, browser, security, persistence, evidence, analysis, remediation, baseline, report, accessibility, PDF, and scale tests
+- `test-results/` — focused results, screenshots, representative report outputs, the Letter-size PDF, and its contact sheet
