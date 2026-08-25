@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import re, json, hashlib, datetime as dt, sys
-ROOT=Path(__file__).resolve().parents[1]; src=(ROOT/'index.html').read_text('utf-8',errors='ignore')
+ROOT=Path(__file__).resolve().parents[2]; src=(ROOT/'index.html').read_text('utf-8',errors='ignore')
 A=[]
 def check(name,ok,detail=''): A.append({'name':name,'passed':bool(ok),'detail':str(detail)[:4000]})
 def window(pattern,span=12000):
@@ -24,8 +24,8 @@ check('Return-to-draft rationale is represented',bool(re.search(r'return.{0,40}d
 rev=window(r'new revision|createReportRevision|reviseReport',28000)
 check('New revision retains prior issue history or source reference',bool(re.search(r'previous|prior|supersed|sourceRevision|issueHistory|revisionHistory',rev,re.I)))
 check('New revision returns to editable draft',bool(re.search(r'DRAFT|locked\s*[:=]\s*false|issuedAt\s*[:=]\s*(?:null|["\']{2})',rev,re.I)))
-stale=window(r'stale|material.*fingerprint|projectFingerprint',26000)
-check('Material project fingerprint/staleness comparison exists',bool(re.search(r'fingerprint|hash|material',stale,re.I)) and bool(re.search(r'stale|diverg',stale,re.I)))
+stale=window(r'reportRevisionState|materialProjectFingerprint|reportProjectFingerprint',32000)
+check('Material project fingerprint/staleness comparison exists',bool(re.search(r'materialProjectFingerprint|reportProjectFingerprint|fingerprint|hash|material',stale,re.I)) and bool(re.search(r'stale|diverg',stale,re.I)))
 check('Issued report divergence does not overwrite issue',bool(re.search(r'issued[\s\S]{0,1800}(?:diverg|stale|new revision)|(?:diverg|stale)[\s\S]{0,1800}issued',src,re.I)))
 # Composition
 for label,pat in [('Executive Summary',r'executiveSummary'),('Methodology',r'methodology'),('Assessment Limitations',r'limitations'),('Conclusion',r'conclusion')]:

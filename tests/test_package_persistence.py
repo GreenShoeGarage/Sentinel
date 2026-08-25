@@ -98,7 +98,7 @@ with sync_playwright() as p:
         download = download_info.value
         download.save_as(str(PACKAGE))
         package = json.loads(PACKAGE.read_text(encoding="utf-8"))
-        check("package-format", package["format"] == "SENTINEL_PROJECT_PACKAGE" and package["formatVersion"] == 3 and package["schemaVersion"] == 13, {key: package.get(key) for key in ["format", "formatVersion", "schemaVersion"]})
+        check("package-format", package["format"] == "SENTINEL_PROJECT_PACKAGE" and package["formatVersion"] == 3 and package["schemaVersion"] == 14, {key: package.get(key) for key in ["format", "formatVersion", "schemaVersion"]})
         check("package-has-evidence-binary", len(package["evidence"]) == 1 and bool(package["evidence"][0]["data"]), package["evidence"])
         check("package-hash-matches-record", package["evidence"][0]["sha256"] == copied_reload["evidence"][0]["hash"])
 

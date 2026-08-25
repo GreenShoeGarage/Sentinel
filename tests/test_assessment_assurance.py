@@ -96,7 +96,7 @@ with sync_playwright() as p:
         page.on("pageerror", lambda exc: errors.append(str(exc)))
         page.on("console", lambda msg: console_errors.append(msg.text) if msg.type == "error" and "favicon" not in msg.text else None)
         page.goto(URL, wait_until="domcontentloaded")
-        page.wait_for_function("window.__SENTINEL_TEST__ && window.__SENTINEL_TEST__.schemaVersion===13 && document.querySelector('#storageLabel').textContent.includes('IndexedDB')")
+        page.wait_for_function("window.__SENTINEL_TEST__ && window.__SENTINEL_TEST__.schemaVersion===14 && document.querySelector('#storageLabel').textContent.includes('IndexedDB')")
         page.evaluate(f"window.__makeAssuranceProject={PROJECT_FACTORY}; window.__makeCleanAssuranceProject={CLEAN_PROJECT_FACTORY};")
 
         model = page.evaluate("""() => {
@@ -115,7 +115,7 @@ with sync_playwright() as p:
           return {audit,rows,controlOutcomes,summary:__SENTINEL_TEST__.assuranceSummary(),gaps,completeness,edges,graph,down1,up2,report:__SENTINEL_TEST__.reportReadiness()};
         }""")
 
-        check("schema13-assurance-project-audits", model["audit"]["ok"], model["audit"])
+        check("schema14-assurance-project-audits", model["audit"]["ok"], model["audit"])
         expected_outcomes = {"NOT TESTED", "TESTED — NO EVIDENCE", "INCONCLUSIVE", "CONTROL PASSED", "CONTROL FAILED", "NOT APPLICABLE"}
         check("six-distinct-coverage-outcomes", expected_outcomes.issubset(set(model["controlOutcomes"])), model["controlOutcomes"])
         check("control-dimension-populated", len(model["rows"]["CONTROL"]) == 7, len(model["rows"]["CONTROL"]))

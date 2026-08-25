@@ -1,4 +1,4 @@
-"""SENTINEL v0.13.5 shell consolidation, workflow, and responsive layout checks."""
+"""SENTINEL v0.15.0-rc.1 shell consolidation, workflow, and responsive layout checks."""
 from __future__ import annotations
 
 import os
@@ -29,7 +29,7 @@ with sync_playwright() as p:
         page.goto(URL, wait_until="domcontentloaded")
         page.wait_for_function("window.__SENTINEL_TEST__ && document.querySelector('#storageLabel').textContent.includes('IndexedDB')")
 
-        check("cleanup-release-version", page.evaluate("__SENTINEL_TEST__.appVersion") == "0.13.5")
+        check("cleanup-release-version", page.evaluate("__SENTINEL_TEST__.appVersion") == "0.15.0-rc.1")
         check("four-row-shell-layout", page.evaluate("getComputedStyle(document.querySelector('.app')).gridTemplateRows.split(' ').length") == 4,
               page.evaluate("getComputedStyle(document.querySelector('.app')).gridTemplateRows"))
         geometry = page.evaluate("""() => {const b=document.querySelector('#classificationBanner').getBoundingClientRect(),w=document.querySelector('#workspace').getBoundingClientRect();return {bannerBottom:b.bottom,workspaceTop:w.top}}""")

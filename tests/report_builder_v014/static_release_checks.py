@@ -2,7 +2,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import re, json, hashlib, subprocess, tempfile, os, sys, datetime as dt
-ROOT=Path(__file__).resolve().parents[1]; htmlp=ROOT/'index.html'; text=htmlp.read_text('utf-8',errors='ignore')
+ROOT=Path(__file__).resolve().parents[2]; htmlp=ROOT/'index.html'; text=htmlp.read_text('utf-8',errors='ignore')
 results=[]
 def chk(name,ok,detail=''):
     results.append({'name':name,'passed':bool(ok),'detail':str(detail)[:2000]})
@@ -25,7 +25,7 @@ class P(HTMLParser):
 p=P(); p.feed(text)
 dups=sorted({x for x in p.ids if p.ids.count(x)>1})
 chk('Application source exists',htmlp.exists(),htmlp.stat().st_size)
-chk('Application identifies Version 0.14.0','0.14.0' in text)
+chk('Application identifies Version 0.15.0-rc.1','0.15.0-rc.1' in text)
 chk('Application identifies Project Schema 14',bool(re.search(r'(?:schemaVersion|SCHEMA_VERSION|PROJECT_SCHEMA|Schema)[^\n<]{0,80}\b14\b',text,re.I)))
 chk('No duplicate static element identifiers',not dups,dups[:50])
 chk('No remote script or stylesheet dependencies',not p.remotes,p.remotes[:30])

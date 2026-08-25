@@ -1,0 +1,14 @@
+SENTINEL v0.15.0-rc.1 validation environment note
+
+Chromium: 144.0.7559.96, Debian GNU/Linux 13 build
+
+Managed policy observed during validation:
+- URLBlocklist: ["*"]
+- AudioCaptureAllowed: false
+- VideoCaptureAllowed: false
+- PrintingEnabled: false
+- DisablePrintPreview: true
+- ExtensionInstallBlocklist: ["*"]
+
+Effect:
+All ordinary browser origins were blocked. about:blank could load canonical source through page content injection but denied Indexed Database and native Web Cryptography. Focused report and user-interface tests therefore used an opaque-document fixture and a test-only SHA-256 bridge. The complete inherited secure-origin browser suite was not represented as passed for this release.

@@ -1,37 +1,77 @@
 {
-  "release_ready": false,
-  "critical_checks": {
-    "Build gate: Version 0.14.0": false,
-    "Build gate: Schema 14": false,
-    "Build gate: Report artifact": false,
-    "Build gate: Final issue governance": true,
-    "Build gate: Revision history": false,
-    "Build gate: Report package": false,
-    "Static: Application source exists": true,
-    "Static: Application identifies Version 0.14.0": false,
-    "Static: Application identifies Project Schema 14": false,
-    "Static: No duplicate static element identifiers": true,
-    "Static: No remote script or stylesheet dependencies": true,
-    "Static: All inline JavaScript passes node --check": true,
-    "Governance semantic coverage is at least 70 percent": false,
-    "Browser: Application loads": false,
-    "Browser: Report Builder workspace opens": false,
-    "Browser: Executive Summary visible": false,
-    "Browser: Methodology visible": false,
-    "Browser: Limitations visible": false,
-    "Browser: Conclusion visible": false,
-    "Browser: Report preview produces substantial content": false,
-    "Browser: Report Builder mobile layout avoids major horizontal overflow": false,
-    "Browser: No uncaught browser errors": false
+  "application": "SENTINEL",
+  "version": "0.15.0-rc.1",
+  "projectSchema": 14,
+  "releaseType": "Release Candidate",
+  "generatedAt": "2026-08-25T00:14:31.975451+00:00",
+  "releaseCandidateReady": true,
+  "version1Ready": false,
+  "executedAssertionTotal": 243,
+  "suites": [
+    {
+      "name": "Full-application static validation",
+      "assertions": 31,
+      "passed": true,
+      "artifact": "test-results/static_application_validation.txt"
+    },
+    {
+      "name": "Schema migration and export validation",
+      "assertions": 50,
+      "passed": true,
+      "artifact": "test-results/migration_validation.txt"
+    },
+    {
+      "name": "Report Builder static implementation checks",
+      "assertions": 29,
+      "passed": true,
+      "artifact": "test-results/static_release_results.json"
+    },
+    {
+      "name": "Report-governance semantic source checks",
+      "assertions": 43,
+      "passed": true,
+      "artifact": "test-results/report_governance_semantic.json"
+    },
+    {
+      "name": "Professional Report Builder browser acceptance",
+      "assertions": 59,
+      "passed": true,
+      "artifact": "test-results/report_builder_results.json"
+    },
+    {
+      "name": "Broad release-candidate browser smoke",
+      "assertions": 23,
+      "passed": true,
+      "artifact": "test-results/rc_browser_smoke.json"
+    },
+    {
+      "name": "Controlled report-package inspection",
+      "assertions": 8,
+      "passed": true,
+      "artifact": "test-results/report_package_inspection.json"
+    }
+  ],
+  "sourceSha256": "4d9ac6c676427c619999a870a24a129175d095edaa48974c48a149bd3177b333",
+  "supersedes": "SENTINEL_v0.14.0.zip (mislabeled Version 0.13.5 / Schema 13 application)",
+  "environmentBoundary": {
+    "browser": "Chromium 144.0.7559.96",
+    "managedUrlBlocklist": [
+      "*"
+    ],
+    "ordinaryOriginsBlocked": true,
+    "indexedDbOnFocusedBrowserFixture": false,
+    "nativeWebCryptoOnFocusedBrowserFixture": false,
+    "testOnlyDigestBridgeUsed": true,
+    "fullInheritedSecureOriginMatrixExecuted": false
   },
-  "focused_assertions": 73,
-  "passed_assertions": 44,
-  "failed_assertions": 29,
-  "inherited": {
-    "executed": 1,
-    "passed": 0,
-    "failed": 1
-  },
-  "downloads": [],
-  "source_sha256": "5be74eaedc1a9e238632a0be1757af047ef6020a0f7550487d8a7d16a6b0338b"
+  "remainingBeforeVersion1": [
+    "Full inherited suite on an unrestricted secure local origin",
+    "Firefox, Safari, and WebKit acceptance",
+    "Physical-device media-capture acceptance",
+    "Storage and recovery fault injection",
+    "Keyboard-only and screen-reader review",
+    "Large-project and large-evidence performance profiling",
+    "Independent cryptographic and security review",
+    "Representative final PDF visual issue review"
+  ]
 }

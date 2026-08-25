@@ -1,21 +1,21 @@
 {
   "suite": "Static release checks",
-  "timestamp": "2026-08-24T20:00:49.882135+00:00",
-  "passed": false,
+  "timestamp": "2026-08-25T00:13:25.039913+00:00",
+  "passed": true,
   "assertions": [
     {
       "name": "Application source exists",
       "passed": true,
-      "detail": "755037"
+      "detail": "844473"
     },
     {
-      "name": "Application identifies Version 0.14.0",
-      "passed": false,
+      "name": "Application identifies Version 0.15.0-rc.1",
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Application identifies Project Schema 14",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -40,27 +40,27 @@
     },
     {
       "name": "Persistent report artifact",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Ordered composition",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Custom report sections",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Executive summary",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Methodology",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "name": "Branding",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -105,12 +105,12 @@
     },
     {
       "name": "Revision history",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Issue hash",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -140,7 +140,7 @@
     },
     {
       "name": "Report package",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -149,5 +149,5 @@
       "detail": ""
     }
   ],
-  "source_sha256": "5be74eaedc1a9e238632a0be1757af047ef6020a0f7550487d8a7d16a6b0338b"
+  "source_sha256": "4d9ac6c676427c619999a870a24a129175d095edaa48974c48a149bd3177b333"
 }

@@ -1,15 +1,111 @@
 {
   "suite": "Report package inspection",
-  "timestamp": "2026-08-24T20:05:20.665663+00:00",
-  "passed": false,
-  "package": null,
+  "timestamp": "2026-08-25T00:13:44.024541+00:00",
+  "passed": true,
+  "package": "/mnt/data/SENTINEL_v0.15.0-rc.1/test-results/validation-client-authorized-physical-security-assessment-report-rev-a-report-package.zip",
   "assertions": [
     {
       "name": "A report package download exists",
-      "passed": false,
-      "detail": "[]"
+      "passed": true,
+      "detail": "['validation-client-authorized-physical-security-assessment-report-rev-a-report-package.zip']"
+    },
+    {
+      "name": "Report package is a valid ZIP archive",
+      "passed": true,
+      "detail": "5"
+    },
+    {
+      "name": "Report package contains a manifest",
+      "passed": true,
+      "detail": "['manifest.json', 'report/report.html', 'report/report.md', 'report/report.json', 'evidence/001-ev-sel-001-selected-report-evidence-png']"
+    },
+    {
+      "name": "Report package contains standalone HTML",
+      "passed": true,
+      "detail": "['manifest.json', 'report/report.html', 'report/report.md', 'report/report.json', 'evidence/001-ev-sel-001-selected-report-evidence-png']"
+    },
+    {
+      "name": "Report package contains Markdown or structured JSON",
+      "passed": true,
+      "detail": "['manifest.json', 'report/report.html', 'report/report.md', 'report/report.json', 'evidence/001-ev-sel-001-selected-report-evidence-png']"
+    },
+    {
+      "name": "Report package does not contain a SENTINEL project database",
+      "passed": true,
+      "detail": "['manifest.json', 'report/report.html', 'report/report.md', 'report/report.json', 'evidence/001-ev-sel-001-selected-report-evidence-png']"
+    },
+    {
+      "name": "Manifest identifies the report revision or issue",
+      "passed": true,
+      "detail": "{\"format\": \"SENTINEL_REPORT_PACKAGE\", \"formatVersion\": 2, \"createdAt\": \"2026-08-25T00:13:37.229Z\", \"appVersion\": \"0.15.0-rc.1\", \"schemaVersion\": 14, \"report\": {\"id\": \"id-1787616813501-7tqdq7znr0y\", \"code\": \"REPORT-001\", \"revision\": \"A\", \"status\": \"FINAL_ISSUE\", \"title\": \"Authorized Physical Security Assessment Report\", \"issueFingerprint\": \"93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770\", \"issuedAt\": \"2026-08-25T00:13:35.531Z\"}, \"files\": [{\"path\": \"report/report.html\", \"mimeType\": \"text/html\", \"bytes\": 30875, \"sha256\": \"6dcb4d9dd29aef6aeca4379f0a96cb69b330fdc7525e541332795850cc7a4ea3\"}, {\"path\": \"report/report.md\", \"mimeType\": \"text/markdown\", \"bytes\": 4582, \"sha256\": \"a665604b1bf4aaf05995043257e3a0d1e6abe3104d78eb1a98f61784b9f44904\"}, {\"path\": \"report/report.json\", \"mimeType\": \"application/json\", \"bytes\": 16191, \"sha256\": \"f63be2da92fd15da2070e3504709dc238286f84e13c884530482a99c1d3b38c6\"}, {\"path\": \"evidence/001-ev-sel-001-selected-report-evidence-png\", \"mimeType\": \"i"
+    },
+    {
+      "name": "Package evidence is explicitly manifested",
+      "passed": true,
+      "detail": "{'evidence_files': ['evidence/001-ev-sel-001-selected-report-evidence-png'], 'manifest_keys': ['format', 'formatVersion', 'createdAt', 'appVersion', 'schemaVersion', 'report', 'files', 'selectedEvidence']}"
     }
   ],
-  "entries": [],
-  "manifest": null
+  "entries": [
+    "manifest.json",
+    "report/report.html",
+    "report/report.md",
+    "report/report.json",
+    "evidence/001-ev-sel-001-selected-report-evidence-png"
+  ],
+  "manifest": {
+    "format": "SENTINEL_REPORT_PACKAGE",
+    "formatVersion": 2,
+    "createdAt": "2026-08-25T00:13:37.229Z",
+    "appVersion": "0.15.0-rc.1",
+    "schemaVersion": 14,
+    "report": {
+      "id": "id-1787616813501-7tqdq7znr0y",
+      "code": "REPORT-001",
+      "revision": "A",
+      "status": "FINAL_ISSUE",
+      "title": "Authorized Physical Security Assessment Report",
+      "issueFingerprint": "93af7e81e6f8e0142ba6f6dadf3d4b37544f6bb5777804a0d3ce1eb9ccdf7770",
+      "issuedAt": "2026-08-25T00:13:35.531Z"
+    },
+    "files": [
+      {
+        "path": "report/report.html",
+        "mimeType": "text/html",
+        "bytes": 30875,
+        "sha256": "6dcb4d9dd29aef6aeca4379f0a96cb69b330fdc7525e541332795850cc7a4ea3"
+      },
+      {
+        "path": "report/report.md",
+        "mimeType": "text/markdown",
+        "bytes": 4582,
+        "sha256": "a665604b1bf4aaf05995043257e3a0d1e6abe3104d78eb1a98f61784b9f44904"
+      },
+      {
+        "path": "report/report.json",
+        "mimeType": "application/json",
+        "bytes": 16191,
+        "sha256": "f63be2da92fd15da2070e3504709dc238286f84e13c884530482a99c1d3b38c6"
+      },
+      {
+        "path": "evidence/001-ev-sel-001-selected-report-evidence-png",
+        "mimeType": "image/png",
+        "bytes": 4991,
+        "sha256": "80025c463095217ae5879ce48ca0fd42a402dcfa1c61d0b9612b8e5be6f91e51",
+        "evidenceId": "report-evidence-selected"
+      }
+    ],
+    "selectedEvidence": [
+      {
+        "path": "evidence/001-ev-sel-001-selected-report-evidence-png",
+        "evidenceId": "report-evidence-selected",
+        "code": "EV-SEL-001",
+        "filename": "selected-report-evidence.png",
+        "mimeType": "image/png",
+        "bytes": 4991,
+        "sha256": "80025c463095217ae5879ce48ca0fd42a402dcfa1c61d0b9612b8e5be6f91e51",
+        "designation": "ORIGINAL",
+        "caption": "Selected report photograph \u2014 authorized lobby control point."
+      }
+    ]
+  }
 }

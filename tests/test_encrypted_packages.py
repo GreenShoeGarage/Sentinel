@@ -59,7 +59,7 @@ with sync_playwright() as p:
         }""")
         outer = json.loads(seed["outer"])
         outer_text = seed["outer"]
-        check("encrypted-package-format", outer["format"] == "SENTINEL_ENCRYPTED_PACKAGE" and outer["formatVersion"] == 1 and outer["schemaVersion"] == 13, {k: outer.get(k) for k in ["format", "formatVersion", "schemaVersion"]})
+        check("encrypted-package-format", outer["format"] == "SENTINEL_ENCRYPTED_PACKAGE" and outer["formatVersion"] == 1 and outer["schemaVersion"] == 14, {k: outer.get(k) for k in ["format", "formatVersion", "schemaVersion"]})
         check("encrypted-package-kdf", outer["kdf"]["name"] == "PBKDF2" and outer["kdf"]["hash"] == "SHA-256" and outer["kdf"]["iterations"] >= 250000, outer["kdf"])
         check("encrypted-package-aead", outer["encryption"]["name"] == "AES-GCM" and bool(outer["encryption"]["iv"]) and bool(outer["ciphertext"]), outer["encryption"])
         sensitive = ["Package Secret Alpha", "Confidential Client Omega", "Restricted Facility Zeta", "secret-photo-alpha.png", "highly-sensitive-binary-content"]

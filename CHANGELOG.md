@@ -1,5 +1,70 @@
 # SENTINEL Changelog
 
+## Version 0.15.0-rc.1 — Professional Report Builder 2.0 and Release-Candidate Reconciliation
+
+**Release date:** August 24, 2026  
+**Project schema:** 14  
+**Release type:** Release Candidate
+
+### Corrected release integrity
+
+- Superseded the earlier archive labeled Version 0.14.0 after final review showed its application source remained Version 0.13.5 / Project Schema 13.
+- Reconciled application identity, project schema, storage key, migration fixtures, documentation, validation records, tests, release status, and manifest.
+- Removed stale validation claims, backup source files, cache files, and failed development artifacts from the canonical release.
+
+### Added Professional Report Builder 2.0
+
+- Added a persistent project-level report artifact with multiple governed revisions.
+- Added ordered built-in sections and analyst-created custom sections.
+- Added dedicated Executive Summary, Scope and Authorization, Methodology, Site Overview, Security Architecture, Assessment Limitations, and Conclusion records.
+- Added client branding, logo, sensitivity marking, handling instructions, header, footer, prepared-by, reviewer, approval, and issuing-authority controls.
+- Added explicit evidence selection, report-specific captions, section placement, finding association, and display order.
+- Added full selectable appendices for tests, observations, evidence, Photo Log, coverage, Rules of Engagement, Daily Field Logs, remediation, retests, baselines, Control Chains, assumptions, issues, interactions, and outstanding questions.
+- Added standalone Hypertext Markup Language, Markdown, structured JavaScript Object Notation, print-to-Portable Document Format, and controlled report-package outputs.
+- Added report-package manifests and explicit selected-evidence boundaries.
+
+### Added report governance
+
+- Added the lifecycle Draft → In Review → Approved → Final Issue.
+- Added reviewer, approval authority, issuing authority, rationale, timestamp, and history records.
+- Added atomic Final Issue so failed validation or hashing cannot leave a partially issued report.
+- Added Secure Hash Algorithm 256-bit sealing of the issued snapshot.
+- Added read-only Final Issue revisions.
+- Added material live-project divergence detection without modifying the sealed issue.
+- Added new Draft revisions linked to the prior issue.
+
+### Fixed
+
+- Fixed a report-renderer syntax defect found before integration.
+- Fixed Final Issue metadata entry invalidating the approval fingerprint before issuance.
+- Fixed Final Issue transaction behavior so issue metadata, snapshot, seal, and lock commit together.
+- Fixed custom-section preservation through report normalization.
+- Fixed issued reports appearing current after material project changes.
+- Added an end-to-end selected-evidence test that proves unrelated evidence remains outside report output and the report package.
+
+### Validation
+
+- 31 full-application static assertions passed.
+- 50 migration and export assertions passed.
+- 29 report static assertions passed.
+- 43 report-governance semantic assertions passed.
+- 59 Professional Report Builder browser assertions passed.
+- 23 broad release-candidate browser smoke assertions passed.
+- 8 controlled report-package inspection assertions passed.
+- 243 executed assertions passed across seven suites.
+- The managed validation environment prevented the complete secure-origin inherited browser suite from running; that limitation is documented and is not represented as a pass.
+
+### Known remaining release-candidate work
+
+- Unrestricted secure-origin inherited browser acceptance
+- Firefox, Safari, and WebKit acceptance
+- Physical-device media-capture acceptance
+- Storage and recovery fault injection
+- Accessibility review
+- Performance profiling
+- Independent security review
+- Representative final Portable Document Format issue review
+
 ## Version 0.13.5 — Interface Consolidation and Workflow Cleanup
 
 **Release date:** August 24, 2026

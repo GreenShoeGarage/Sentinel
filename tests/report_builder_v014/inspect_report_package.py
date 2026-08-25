@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import zipfile, json, re, hashlib, datetime as dt, sys
-ROOT=Path(__file__).resolve().parents[1]; out=ROOT/'test-results'; files=[]
+ROOT=Path(__file__).resolve().parents[2]; out=ROOT/'test-results'; files=[]
 for p in out.iterdir() if out.exists() else []:
  if p.is_file() and ('report' in p.name.lower() or 'assessment' in p.name.lower()) and p.suffix.lower() in {'.zip','.report','.sentinel','.pkg'}: files.append(p)
 files.sort(key=lambda p:p.stat().st_mtime,reverse=True)

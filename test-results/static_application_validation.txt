@@ -1,0 +1,33 @@
+PASS release-version 
+PASS release-schema 
+PASS no-remote-runtime-dependencies 
+PASS no-telemetry-endpoints 
+PASS exif-gps-coordinates-not-surfaced 
+PASS authenticated-local-encryption-present 
+PASS encrypted-package-envelope-present 
+PASS recoverable-capture-queue-present 
+PASS direct-media-capture-present 
+PASS storage-and-lock-safeguards-present 
+PASS control-chain-workspace-present 
+PASS control-chain-reporting-present 
+PASS control-chain-safety-language-present 
+PASS remediation-retest-workspace-present 
+PASS immutable-retest-records-present 
+PASS retest-traceability-and-reporting-present 
+PASS semantic-baseline-comparison-present 
+PASS immutable-baseline-hashes-present 
+PASS baseline-review-workflow-present 
+PASS baseline-reporting-and-exports-present 
+PASS streamlined-shell-present 
+PASS workflow-navigation-present 
+PASS responsive-shell-fix-present 
+PASS dashboard-guidance-present 
+PASS single-inline-script 1
+PASS javascript-syntax 
+PASS declared-function-uniqueness []
+PASS substantial-function-coverage 648
+PASS static-element-id-uniqueness []
+PASS migration-fixtures-present 13
+PASS media-test-assets-present ['sample_audio.wav', 'sample_document.pdf', 'sample_evidence.png', 'sample_note.txt', 'sample_unrelated.png', 'sample_video.webm']
+ALL PASS 31 assertions
+ASSERTIONS=31

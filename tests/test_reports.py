@@ -80,7 +80,7 @@ with sync_playwright() as p:
         check("html-report-photo-caption", "Report photograph" in report_html)
         check("html-report-embeds-image", "data:image/" in report_html)
         check("html-report-classification", "CLIENT CONFIDENTIAL" in report_html)
-        check("html-report-version", "SENTINEL v0.13.5" in report_html and "Schema 13" in report_html)
+        check("html-report-version", "SENTINEL v0.15.0-rc.1" in report_html and "Schema 14" in report_html)
 
         with page.expect_download(timeout=30000) as info:
             page.click("#mdReport")
@@ -90,7 +90,7 @@ with sync_playwright() as p:
         check("markdown-photo-log-appendix", "## Photo Log Appendix" in markdown)
         check("markdown-photo-caption", "Report photograph" in markdown)
         check("markdown-classification", "CLIENT CONFIDENTIAL" in markdown)
-        check("markdown-version-footer", "SENTINEL v0.13.5" in markdown and "Project Schema 13" in markdown)
+        check("markdown-version-footer", "SENTINEL v0.15.0-rc.1" in markdown and "Project Schema 14" in markdown)
         check("report-runtime-clean", not errors, errors)
         browser.close()
     except Exception as exc:

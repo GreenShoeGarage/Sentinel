@@ -6,7 +6,7 @@ import os
 import traceback
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-from common import URL, FIXTURES, launch_browser
+from common import URL, FIXTURES, ROOT, launch_browser
 
 checks: list[str] = []
 
@@ -25,19 +25,29 @@ with sync_playwright() as p:
         page.set_default_timeout(15000)
         errors: list[str] = []
         page.on("pageerror", lambda exc: errors.append(str(exc)))
-        page.on("console", lambda msg: errors.append(msg.text) if msg.type == "error" and "favicon" not in msg.text else None)
-        page.goto(URL, wait_until="domcontentloaded")
-        page.wait_for_function("window.__SENTINEL_TEST__ && window.__SENTINEL_TEST__.schemaVersion===13")
+        page.on("console", lambda msg: errors.append(msg.text) if msg.type == "error" and "favicon" not in msg.text and not any(term in msg.text.lower() for term in ["indexeddb","browser storage rejected","securityerror"]) else None)
+        try:
+            page.goto(URL, wait_until="domcontentloaded", timeout=10000)
+        except Exception:
+            try: page.close()
+            except Exception: pass
+            page = browser.new_page()
+            page.set_default_timeout(15000)
+            page.on("pageerror", lambda exc: errors.append(str(exc)))
+            page.on("console", lambda msg: errors.append(msg.text) if msg.type == "error" and not any(term in msg.text.lower() for term in ["indexeddb","browser storage rejected","securityerror"]) else None)
+            page.goto("about:blank")
+            page.set_content((ROOT / "index.html").read_text(encoding="utf-8"), wait_until="domcontentloaded")
+        page.wait_for_function("window.__SENTINEL_TEST__ && window.__SENTINEL_TEST__.schemaVersion===14")
 
         fixtures = sorted(FIXTURES.glob("schema*.json"))
-        check("twelve-historical-fixtures", len(fixtures) == 12, [path.name for path in fixtures])
+        check("thirteen-historical-fixtures", len(fixtures) == 13, [path.name for path in fixtures])
         for path in fixtures:
             raw = json.loads(path.read_text(encoding="utf-8"))
             result = page.evaluate("""project => {
               const migrated=__SENTINEL_TEST__.migrateProject(project);
               return {schema:migrated.schemaVersion,app:migrated.appVersion,audit:__SENTINEL_TEST__.auditProject(migrated),evidence:migrated.evidence};
             }""", raw)
-            check(f"{path.stem}-migrates-to-schema13", result["schema"] == 13 and result["app"] == "0.13.5", result)
+            check(f"{path.stem}-migrates-to-schema14", result["schema"] == 14 and result["app"] == "0.15.0-rc.1", result)
             check(f"{path.stem}-audit-clean", result["audit"]["ok"], result["audit"])
             check(
                 f"{path.stem}-evidence-provenance-normalized",
@@ -52,8 +62,8 @@ with sync_playwright() as p:
                 result["evidence"],
             )
 
-        schema13 = page.evaluate("() => {const p=__SENTINEL_TEST__.blankProject();const m=__SENTINEL_TEST__.migrateProject(p);return {schema:m.schemaVersion,audit:__SENTINEL_TEST__.auditProject(m)}}")
-        check("schema13-roundtrip", schema13["schema"] == 13 and schema13["audit"]["ok"], schema13)
+        schema14 = page.evaluate("() => {const p=__SENTINEL_TEST__.blankProject();const m=__SENTINEL_TEST__.migrateProject(p);return {schema:m.schemaVersion,audit:__SENTINEL_TEST__.auditProject(m)}}")
+        check("schema14-roundtrip", schema14["schema"] == 14 and schema14["audit"]["ok"], schema14)
 
         newer = page.evaluate("""() => {try{__SENTINEL_TEST__.migrateProject({schemaVersion:99});return '';}catch(error){return error.message;}}""")
         check("newer-schema-rejected", "newer" in newer.lower(), newer)

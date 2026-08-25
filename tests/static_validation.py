@@ -22,8 +22,8 @@ def check(name: str, condition: bool, detail="") -> None:
     print("PASS", name, detail)
 
 
-check("release-version", "APP_VERSION='0.13.5'" in source)
-check("release-schema", "SCHEMA_VERSION=13" in source)
+check("release-version", "APP_VERSION='0.15.0-rc.1'" in source)
+check("release-schema", "SCHEMA_VERSION=14" in source)
 check("no-remote-runtime-dependencies", not re.search(r"(?:src|href)=[\"']https?://", source, re.I))
 check("no-telemetry-endpoints", not re.search(r"google-analytics|googletagmanager|segment\.com|sentry\.io|mixpanel", source, re.I))
 check("exif-gps-coordinates-not-surfaced", "GPSPresent" in source and "GPSLatitude" not in source and "GPSLongitude" not in source and "GPSAltitude" not in source)
@@ -79,7 +79,7 @@ id_duplicates = sorted({item for item in parser.ids if parser.ids.count(item) > 
 check("static-element-id-uniqueness", not id_duplicates, id_duplicates)
 
 fixture_paths = sorted((ROOT / "tests" / "fixtures").glob("schema*.json"))
-check("migration-fixtures-present", len(fixture_paths) == 12, len(fixture_paths))
+check("migration-fixtures-present", len(fixture_paths) == 13, len(fixture_paths))
 asset_paths = sorted((ROOT / "tests" / "assets").glob("sample_*"))
 check("media-test-assets-present", len(asset_paths) >= 5, [path.name for path in asset_paths])
 

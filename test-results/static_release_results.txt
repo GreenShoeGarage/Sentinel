@@ -1,30 +1,30 @@
-FAIL 18/29
-PASS Application source exists: 755037
-FAIL Application identifies Version 0.14.0: 
-FAIL Application identifies Project Schema 14: 
+PASS 29/29
+PASS Application source exists: 844473
+PASS Application identifies Version 0.15.0-rc.1: 
+PASS Application identifies Project Schema 14: 
 PASS No duplicate static element identifiers: []
 PASS No remote script or stylesheet dependencies: []
 PASS Inline JavaScript is present: 1
 PASS All inline JavaScript passes node --check: [{'script': 0, 'returncode': 0, 'stderr': ''}]
-FAIL Persistent report artifact: 
-FAIL Ordered composition: 
-FAIL Custom report sections: 
-FAIL Executive summary: 
-FAIL Methodology: 
+PASS Persistent report artifact: 
+PASS Ordered composition: 
+PASS Custom report sections: 
+PASS Executive summary: 
+PASS Methodology: 
 PASS Limitations: 
 PASS Conclusion: 
-FAIL Branding: 
+PASS Branding: 
 PASS Selected evidence: 
 PASS Appendix controls: 
 PASS Review lifecycle: 
 PASS Approval lifecycle: 
 PASS Final issue lifecycle: 
-FAIL Revision history: 
-FAIL Issue hash: 
+PASS Revision history: 
+PASS Issue hash: 
 PASS Staleness detection: 
 PASS Final issue locking: 
 PASS HTML output: 
 PASS Markdown output: 
 PASS JSON output: 
-FAIL Report package: 
+PASS Report package: 
 PASS Print/PDF: 

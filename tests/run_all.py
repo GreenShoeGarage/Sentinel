@@ -1,4 +1,4 @@
-"""Start a local origin and run the complete SENTINEL v0.13.5 validation suite."""
+"""Start a local origin and run the complete SENTINEL v0.15.0-rc.1 validation suite."""
 from __future__ import annotations
 
 import os

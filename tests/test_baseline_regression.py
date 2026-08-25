@@ -117,10 +117,10 @@ with sync_playwright() as p:
         errors: list[str] = []
         page.on("pageerror", lambda exc: errors.append(str(exc)))
         page.goto(URL, wait_until="domcontentloaded")
-        page.wait_for_function("window.__SENTINEL_TEST__ && window.__SENTINEL_TEST__.schemaVersion===13")
+        page.wait_for_function("window.__SENTINEL_TEST__ && window.__SENTINEL_TEST__.schemaVersion===14")
         result = page.evaluate(SEED_AND_COMPARE)
 
-        check("schema13-baseline-project-audits", result["audit"]["ok"], result["audit"])
+        check("schema14-baseline-project-audits", result["audit"]["ok"], result["audit"])
         check("immutable-baselines-created", result["a"]["snapshotHash"] and result["b"]["snapshotHash"] and result["a"]["snapshotHash"] != result["b"]["snapshotHash"], [result["a"]["snapshotHash"], result["b"]["snapshotHash"]])
         check("snapshot-hashes-are-sha256", len(result["a"]["snapshotHash"]) == 64 and len(result["b"]["snapshotHash"]) == 64)
         check("baseline-integrity-verifies", result["cleanIntegrity"]["state"] == "VERIFIED", result["cleanIntegrity"])

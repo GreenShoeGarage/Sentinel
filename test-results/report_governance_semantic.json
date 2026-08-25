@@ -1,7 +1,7 @@
 {
   "suite": "Report governance semantic source checks",
-  "timestamp": "2026-08-24T20:03:56.134351+00:00",
-  "passed": false,
+  "timestamp": "2026-08-25T00:13:25.818958+00:00",
+  "passed": true,
   "assertions": [
     {
       "name": "Schema 14 migration is represented",
@@ -10,12 +10,12 @@
     },
     {
       "name": "Report artifact is stored in project model",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Report normalization preserves custom sections",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -55,32 +55,32 @@
     },
     {
       "name": "New revision retains prior issue history or source reference",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "New revision returns to editable draft",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Material project fingerprint/staleness comparison exists",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Issued report divergence does not overwrite issue",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Executive Summary has persistent field",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Methodology has persistent field",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "name": "Section order is persisted",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -105,27 +105,27 @@
     },
     {
       "name": "Custom sections are editable and orderable",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Report package export implementation exists",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Report package uses explicit selected evidence",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Report package writes manifest",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Report package includes report output",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -195,7 +195,7 @@
     },
     {
       "name": "Draft watermark is represented",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
@@ -210,14 +210,14 @@
     },
     {
       "name": "Approval identity and rationale are represented",
-      "passed": false,
+      "passed": true,
       "detail": ""
     },
     {
       "name": "Issued report is not normally editable",
-      "passed": false,
+      "passed": true,
       "detail": ""
     }
   ],
-  "source_sha256": "5be74eaedc1a9e238632a0be1757af047ef6020a0f7550487d8a7d16a6b0338b"
+  "source_sha256": "4d9ac6c676427c619999a870a24a129175d095edaa48974c48a149bd3177b333"
 }

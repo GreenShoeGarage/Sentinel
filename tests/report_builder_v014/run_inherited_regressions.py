@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import subprocess, os, sys, json, re, datetime as dt, shutil
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'test-results'; OUT.mkdir(exist_ok=True)
 env=os.environ.copy(); env.update({'SENTINEL_INDEX':str(ROOT/'index.html'),'SENTINEL_APP_PATH':str(ROOT/'index.html'),'SENTINEL_ROOT':str(ROOT),'PYTHONUNBUFFERED':'1'})
 # Create compatibility copies beside inherited test dirs when they expect ../index.html.

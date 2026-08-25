@@ -1,0 +1,146 @@
+{
+  "suite": "SENTINEL release-candidate browser smoke",
+  "started": "2026-08-25T00:13:38.959718+00:00",
+  "assertions": [
+    {
+      "name": "Application title",
+      "passed": true,
+      "advisory": false,
+      "detail": "SENTINEL \u2014 Physical Security Red Team Workbench"
+    },
+    {
+      "name": "Release identity",
+      "passed": true,
+      "advisory": false,
+      "detail": "{'version': '0.15.0-rc.1', 'schema': 14}"
+    },
+    {
+      "name": "Blank Schema 14 project audits clean",
+      "passed": true,
+      "advisory": false,
+      "detail": "{'ok': True, 'errors': [], 'warnings': ['No site or floor plan has been loaded.']}"
+    },
+    {
+      "name": "Advanced workflow exposes substantial navigation",
+      "passed": true,
+      "advisory": false,
+      "detail": "['dashboard', 'project', 'map', 'controls', 'tests', 'field', 'observations', 'evidence', 'daily', 'timeline', 'interactions', 'notes', 'findings', 'coverage', 'trace', 'chains', 'retest', 'baselines', 'report', 'registers', 'security']"
+    },
+    {
+      "name": "Every visible workflow destination opens",
+      "passed": true,
+      "advisory": false,
+      "detail": "[]"
+    },
+    {
+      "name": "Report destination is included",
+      "passed": true,
+      "advisory": false,
+      "detail": "['dashboard', 'project', 'map', 'controls', 'tests', 'field', 'observations', 'evidence', 'daily', 'timeline', 'interactions', 'notes', 'findings', 'coverage', 'trace', 'chains', 'retest', 'baselines', 'report', 'registers', 'security']"
+    },
+    {
+      "name": "Assessment Assurance destination is included",
+      "passed": true,
+      "advisory": false,
+      "detail": "['dashboard', 'project', 'map', 'controls', 'tests', 'field', 'observations', 'evidence', 'daily', 'timeline', 'interactions', 'notes', 'findings', 'coverage', 'trace', 'chains', 'retest', 'baselines', 'report', 'registers', 'security']"
+    },
+    {
+      "name": "Remediation and Retest destination is included",
+      "passed": true,
+      "advisory": false,
+      "detail": "['dashboard', 'project', 'map', 'controls', 'tests', 'field', 'observations', 'evidence', 'daily', 'timeline', 'interactions', 'notes', 'findings', 'coverage', 'trace', 'chains', 'retest', 'baselines', 'report', 'registers', 'security']"
+    },
+    {
+      "name": "Command palette opens",
+      "passed": true,
+      "advisory": false,
+      "detail": ""
+    },
+    {
+      "name": "Command palette includes report and evidence actions",
+      "passed": true,
+      "advisory": false,
+      "detail": "COMMAND\nNew Test\nCreate an authorized test case\nCOMMAND\nNew Observation\nRecord a raw assessment observation\nCOMMAND\nAdd Evidence\nCreate evidence metadata or attach a binary\nCOMMAND\nOpen Evidence Vault\nBrowse stored evidence and provenance\nCOMMAND\nOpen Photo Log\nReview and order photographic evidence\nCOMMAND\nVerify All Evidence\nRecalculate hashes for locally stored evidence\nCOMMAND\nNew Finding\nCreate a draft finding\nCOMMAND\nNew Positive Observation\nDocument a control that performed well\nCOMMAND\nNew Interaction\nRecord an authorized anonymized interaction\nCOMMAND\nNew Field Note\nCapture a timestamped scratch note\nCOMMAND\nNew Assumption\nAdd an assumption to the supporting register\nCOMMAND\nNew Issue\nAdd an operational issue\nCOMMAND\nOpen Map\nSite and floor-plan workspace\nCOMMAND\nOpen Field Mode\nRun an authorized active test\nCOMMAND\nOpen Timeline\nReview chronological engagement activity\nCOMMAND\nOpen Assessment Assurance\nReview coverage, gaps, completeness, and sign-off\nCOMMAND\nOpen Traceabilit"
+    },
+    {
+      "name": "Consolidated Project menu is present",
+      "passed": true,
+      "advisory": false,
+      "detail": ""
+    },
+    {
+      "name": "Project menu contains recovery and package operations",
+      "passed": true,
+      "advisory": false,
+      "detail": "PROJECT\n\uff0b\nNew Project\nStart a fresh assessment\n\u2302\nOpen Project\nChoose a local project\n\u2193\nSave Now\nCommit the active project\n\u29c9\nSave As Copy\nDuplicate safely with new identifiers\nTRANSFER & RECOVERY\n\u21e9\nExport Project Package\nComplete portable project\n\u2301\nExport Encrypted Package\nPassphrase-protected backup\n!\nEmergency Export\nRecover as much as possible\n\u21e7\nImport Package\nRestore a SENTINEL project\n\u25c6\nCreate Checkpoint\nFreeze a local recovery point\n\u21b6\nRecovery\nOpen recovery checkpoints"
+    },
+    {
+      "name": "Desktop sidebar collapse preserves workspace width",
+      "passed": true,
+      "advisory": false,
+      "detail": "{'before': {'x': 237, 'y': 90.1875, 'width': 1203, 'height': 878.875}, 'after': {'x': 42.09375, 'y': 90.1875, 'width': 1397.90625, 'height': 878.875}}"
+    },
+    {
+      "name": "Professional Report Builder 2.0 renders in full application",
+      "passed": true,
+      "advisory": false,
+      "detail": ""
+    },
+    {
+      "name": "Report Builder exposes composition through governance",
+      "passed": true,
+      "advisory": false,
+      "detail": ""
+    },
+    {
+      "name": "Mobile navigation drawer opens",
+      "passed": true,
+      "advisory": false,
+      "detail": ""
+    },
+    {
+      "name": "Mobile menu reports expanded state",
+      "passed": true,
+      "advisory": false,
+      "detail": ""
+    },
+    {
+      "name": "Mobile navigation drawer closes",
+      "passed": true,
+      "advisory": false,
+      "detail": ""
+    },
+    {
+      "name": "Mobile shell avoids page-level horizontal overflow",
+      "passed": true,
+      "advisory": false,
+      "detail": "{'scroll': 390, 'client': 390, 'footer': 28.9375}"
+    },
+    {
+      "name": "Mobile footer remains visible and compact",
+      "passed": true,
+      "advisory": false,
+      "detail": "{'scroll': 390, 'client': 390, 'footer': 28.9375}"
+    },
+    {
+      "name": "No uncaught browser exceptions",
+      "passed": true,
+      "advisory": false,
+      "detail": "[]"
+    },
+    {
+      "name": "No material console errors",
+      "passed": true,
+      "advisory": false,
+      "detail": "[]"
+    },
+    {
+      "name": "Opaque-origin storage notes documented",
+      "passed": true,
+      "advisory": true,
+      "detail": "[\"SecurityError: Failed to execute 'open' on 'IDBFactory': access to the Indexed Database API is denied in this context.\\n    at <anonymous>:698:83\\n    at new Promise (<anonymous>)\\n    at openDB (<anonymous>:698:32)\\n    at initializeStorage (<anonymous>:788:12)\\n    at <anonymous>:1520:1\\n    at <anonymous>:1522:3\", 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:826:403', 'Error: Browser storage rejected the project and IndexedDB is unavailable. Export immediately to avoid data loss.\\n    at <anonymous>:804:860\\n    at save (<anonymous>:804:1545)\\n    at <anonymous>:826:403']"
+    }
+  ],
+  "completed": "2026-08-25T00:13:43.373351+00:00",
+  "passed": true
+}
